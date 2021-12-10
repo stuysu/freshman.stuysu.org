@@ -1,0 +1,64 @@
+<template>
+    <div id="app">
+        <NavBar id="nav" />
+        <Nuxt id="main" />
+    </div>
+</template>
+<script></script>
+
+<style>
+:root {
+    font-size: 16px;
+
+    --text-primary: #2c3e50;
+    /* --text-secondary: #ececec; */
+    /* --bg-primary: #23232e;
+    --bg-secondary: #141418; */
+    --transition-speed: 600ms;
+    --main-font: "Open Sans";
+    font-family: var(--main-font);
+}
+
+* {
+    font-family: var(--main-font);
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    color: var(--text-primary);
+}
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #2c3e50;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #3f943f;
+}
+
+#app {
+    font-family: var(--main-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    color: #2c3e50;
+
+    /* to be away from nav */
+}
+
+#main {
+    height: 95vh;
+}
+#nav {
+    height: 5vh;
+}
+</style>
