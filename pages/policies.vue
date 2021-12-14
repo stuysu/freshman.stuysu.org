@@ -1,6 +1,6 @@
 <template>
     <main>
-        <h1 id="title">Home Page!</h1>
+        <h1 id="title">Our Commitment</h1>
     </main>
 </template>
 

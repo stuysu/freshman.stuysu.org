@@ -1,9 +1,8 @@
 <template>
     <main>
-        <h1 id="title">Home Page!</h1>
+        <h1 id="title">About our campaign</h1>
     </main>
 </template>
-
 <script>
 export default {};
 </script>

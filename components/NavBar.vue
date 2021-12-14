@@ -1,8 +1,8 @@
 <template>
     <nav>
-        <a href="#">The Policies</a>
-        <h1 id="title">Andy + Fin Caucus</h1>
-        <a href="#">About Us</a>
+        <NuxtLink to="/policies">The Policies</NuxtLink>
+        <NuxtLink to="/" id="title">Andy + Fin Caucus</NuxtLink>
+        <NuxtLink to="/about">About Us</NuxtLink>
     </nav>
 </template>
 
@@ -19,6 +19,9 @@ nav {
     justify-content: center; /* Align center on X axis */
 }
 
+#title {
+    font-size: 24px;
+}
 nav * {
     margin-right: 20px;
     margin-left: 20px;
