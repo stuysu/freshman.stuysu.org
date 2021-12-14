@@ -1,8 +1,10 @@
 <template>
     <nav>
-        <NuxtLink to="/policies">The Policies</NuxtLink>
+        <NuxtLink to="/suggest">Suggestions</NuxtLink>
+        <NuxtLink to="/policies">Policies</NuxtLink>
         <NuxtLink to="/" id="title">Andy + Fin Caucus</NuxtLink>
         <NuxtLink to="/about">About Us</NuxtLink>
+        <NuxtLink to="/socials">Social Media</NuxtLink>
     </nav>
 </template>
 
@@ -19,12 +21,16 @@ nav {
     justify-content: center; /* Align center on X axis */
 }
 
-#title {
-    font-size: 24px;
-}
 nav * {
-    margin-right: 20px;
+    margin-right: 20px; /* TODO CONVERT TO VW, SO IT IS RESPONSIVE */
     margin-left: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+#title {
+    font-size: 20px;
+    width: 200px;
 }
 a {
     color: var(--text-primary);
