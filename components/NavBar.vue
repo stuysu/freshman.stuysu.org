@@ -22,9 +22,9 @@ nav {
 }
 
 nav * {
-    margin-right: 20px; /* TODO CONVERT TO VW, SO IT IS RESPONSIVE */
-    margin-left: 20px;
-    width: 150px;
+    margin-right: 0.1vw;
+    margin-left: 0.1vw;
+    width: 15vw;
     text-align: center;
 }
 
