@@ -7,6 +7,10 @@
 <script></script>
 
 <style>
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+}
 :root {
     font-size: 16px;
 
