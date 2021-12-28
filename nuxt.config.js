@@ -39,8 +39,12 @@ export default {
     buildModules: [],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: ["@nuxt/http"],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
+
+    serverMiddleware: {
+        "/api": "~/api",
+    },
 };

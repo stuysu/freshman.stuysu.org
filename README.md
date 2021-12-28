@@ -2,6 +2,8 @@
 
 ## Build Setup
 
+### In your .env, map ``DB_CONNECT`` to the mongodbURI
+
 ```bash
 # install dependencies
 $ npm install
