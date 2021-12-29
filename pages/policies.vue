@@ -38,6 +38,8 @@ main {
     padding-right: 2vw;
     padding-left: 2vw;
     padding-bottom: 2vh;
+    max-width: 900px;
+    margin: auto;
 }
 #title {
     text-align: center;

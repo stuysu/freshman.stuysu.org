@@ -29,10 +29,10 @@ export default {
     components: true,
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-    buildModules: [],
+    buildModules: ["@nuxt/image"],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: ["@nuxt/http"],
+    modules: ["@nuxt/http", "@nuxt/image"],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
