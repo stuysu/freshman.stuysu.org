@@ -34,7 +34,7 @@ body {
     color: black;
     background-color: white;
     margin: 0;
-    padding: 0;
+    padding: 1vh;
 }
 
 body::-webkit-scrollbar {
@@ -61,8 +61,5 @@ body::-webkit-scrollbar-thumb {
 
 #main {
     min-height: 95vh;
-}
-#nav {
-    height: 5vh;
 }
 </style>
