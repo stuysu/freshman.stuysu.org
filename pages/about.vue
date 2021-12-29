@@ -38,7 +38,6 @@
             <Director name="Mason Chung" role="Cheif of Staff #1" />
             <Director name="Tajrian Jahan" role="Cheif of Staff #2" />
             <Director name="Rou Chen" role="Secretary" />
-            <Director name="Lenny Metlitsky" role="IT Director" />
             <Director name="Grace Rhee" role="Socials Director" />
             <Director name="Jia Wen Lin" role="Graphics Director" />
             <Director name="Ray Xu" role="Policy Director #1" />
