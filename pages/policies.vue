@@ -82,17 +82,19 @@ p {
 #policy_nav {
     /* background-color: red; */
     width: 100%;
-    height: 5vh;
+
     display: flex;
-    align-items: center; /* Align center on Y axis */
-    justify-content: center; /* Align center on X axis */
+    justify-content: space-around; /* Align center on X axis */
+    flex-wrap: wrap;
 }
 
 #policy_nav span {
+    flex: 1;
+    /* width: 15vw; */
+    width: 200px;
     font-size: 1.4rem;
-    margin-right: 0.1vw;
-    margin-left: 0.1vw;
-    width: 15vw;
+    margin-right: 3vw;
+    margin-left: 3vw;
     text-align: center;
     text-decoration: underline;
 }
