@@ -18,7 +18,10 @@ const policySchema = new mongoose.Schema({
         required: true,
     },
     catagory: {
-        type: Number,
+        type: String,
+    },
+    how: {
+        type: String,
     },
 });
 

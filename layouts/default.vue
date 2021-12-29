@@ -60,7 +60,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #main {
-    height: 95vh;
+    min-height: 95vh;
 }
 #nav {
     height: 5vh;
