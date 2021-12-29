@@ -34,17 +34,82 @@
         </p>
         <h2>Who's in the team?</h2>
         <div id="team_directors">
-            <Director name="Lenny Metlitsky" role="IT Director" />
-            <Director name="Mason Chung" role="Cheif of Staff #1" />
-            <Director name="Tajrian Jahan" role="Cheif of Staff #2" />
-            <Director name="Rou Chen" role="Secretary" />
-            <Director name="Grace Rhee" role="Socials Director" />
-            <Director name="Jia Wen Lin" role="Graphics Director" />
-            <Director name="Ray Xu" role="Policy Director #1" />
-            <Director name="Josephine G." role="Policy Director #2" />
-            <Director name="Ayla Irshad" role="Finance Director" />
-            <Director name="Salma Azim" role="Events Director #1" />
-            <Director name="Grace Na" role="Events Director #2" />
+            <Director
+                name="Lenny Metlitsky"
+                role="IT Director"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                img_url="/img/default_pfp.jpg"
+            />
+            <Director
+                name="Mason Chung"
+                role="Cheif of Staff #1"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                img_url="/img/default_pfp.jpg"
+            />
+            <Director
+                name="Tajrian Jahan"
+                role="Cheif of Staff #2"
+                description="Tajrian is a Chief of Staff, and is responsible for assisting the Presidents and moderating all staff and directors."
+                img_url="/img/staff/directors/TajrianJahan.jpg"
+            />
+            <Director
+                name="Rou Chen"
+                role="Secretary"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                img_url="/img/default_pfp.jpg"
+            />
+            <Director
+                name="Grace Rhee"
+                role="Socials Director"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                img_url="/img/default_pfp.jpg"
+            />
+            <Director
+                name="Jia Wen Lin"
+                role="Graphics Director"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                img_url="/img/default_pfp.jpg"
+            />
+            <Director
+                name="Ray Xu"
+                role="Policy Director #1"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                img_url="/img/default_pfp.jpg"
+            />
+            <Director
+                name="Josephine G."
+                role="Policy Director #2"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                img_url="/img/default_pfp.jpg"
+            />
+            <Director
+                name="Ayla Irshad"
+                role="Finance Director"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                img_url="/img/default_pfp.jpg"
+            />
+            <Director
+                name="Salma Azim"
+                role="Events Director #1"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                img_url="/img/default_pfp.jpg"
+            />
+            <Director
+                name="Grace Na"
+                role="Events Director #2"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                img_url="/img/default_pfp.jpg"
+            />
         </div>
     </main>
 </template>
@@ -57,7 +122,7 @@ export default {};
 }
 
 main {
-    width: 80vw;
+    width: 90vw;
     min-width: 300px;
     margin: auto;
 }

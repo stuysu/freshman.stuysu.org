@@ -4,11 +4,8 @@
             <h2>{{ name }}</h2>
             <h3>{{ role }}</h3>
             <!-- <div class="pfp" /> -->
-            <nuxt-img class="pfp" src="/img/default_pfp.jpg" />
-            <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <nuxt-img class="pfp" :src="img_url" />
+            <p class="description">{{ description }}</p>
         </div>
     </div>
 </template>
@@ -16,7 +13,8 @@
 <script>
 export default {
     name: "Policy",
-    props: ["name", "role"],
+    props: ["name", "role", "description", "img_url"],
+
     mounted() {
         // console.log(this.name, this.description, this.why);
     },
