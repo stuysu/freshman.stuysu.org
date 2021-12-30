@@ -17,9 +17,6 @@ const policySchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    catagory: {
-        type: String,
-    },
     how: {
         type: String,
     },

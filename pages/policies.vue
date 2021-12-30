@@ -1,6 +1,6 @@
 <template>
     <main>
-        <h1 id="title">Our Commitment</h1>
+        <h1 id="title">Our Commitments</h1>
 
         <nav id="policy_nav">
             <span v-on:click="scrollTo('flexibility')">Flexibility</span>
@@ -93,8 +93,8 @@ p {
     /* width: 15vw; */
     width: 200px;
     font-size: 1.4rem;
-    margin-right: 3vw;
-    margin-left: 3vw;
+    margin-right: 10px;
+    margin-left: 10px;
     text-align: center;
     text-decoration: underline;
 }
