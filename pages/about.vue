@@ -51,7 +51,8 @@
             <Director
                 name="Tajrian Jahan"
                 role="Cheif of Staff #2"
-                description="Tajrian is a Chief of Staff, and is responsible for assisting the Presidents and moderating all staff and directors."
+                description="Tajrian is a Chief of Staff, and is responsible for assisting 
+				the Presidents and moderating all staff and directors."
                 img_url="/img/staff/directors/TajrianJahan.jpg"
             />
             <Director
@@ -78,9 +79,9 @@
             <Director
                 name="Ray Xu"
                 role="Policy Director #1"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                img_url="/img/default_pfp.jpg"
+                description="Ray is one of two Policy directors responsible for representing freshmen. 
+				He is obsessed with Charlie Puth."
+                img_url="/img/staff/directors/RayXu.jpg"
             />
             <Director
                 name="Josephine G."
@@ -149,6 +150,6 @@ h2 {
     flex: 1;
     max-width: 320px;
     margin: 20px;
-    height: 350px;
+    height: 355px;
 }
 </style>

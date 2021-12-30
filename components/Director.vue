@@ -25,6 +25,7 @@ export default {
     width: 100%;
     border: 1px solid rgb(54, 51, 51);
     border-radius: 3%;
+    padding-top: 5px;
 }
 .director {
     text-align: center;
