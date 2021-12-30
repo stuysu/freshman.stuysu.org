@@ -102,4 +102,9 @@ p {
 #policies h1 {
     text-align: center;
 }
+@media only screen and (max-width: 630px) {
+    #title {
+        display: none;
+    }
+}
 </style>

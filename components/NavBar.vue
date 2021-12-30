@@ -1,153 +1,126 @@
 <template>
-    <nav>
-        <!-- 2 hidden navToggle elements that get selectively shown when the media query is active -->
-        <span id="toggle" class="navToggle on" @click="openMenu">&#8801;</span>
-        <span id="close" class="navToggle on" @click="closeMenu">x</span>
-        <!-- 1 logo at the "start" of the list for when in media query -->
-        <NuxtLink to="/" id="top-hidden"><img src="/logo.png" alt="Andy + Fin Caucus Logo"></NuxtLink>
-        <NuxtLink to="/suggest">Suggestions</NuxtLink>
-        <NuxtLink to="/policies">Policies</NuxtLink>
-        <!-- 1 logo in the middle for the site normally -->
-        <NuxtLink to="/" id="title"><img src="/logo.png" alt="Andy + Fin Caucus Logo"></NuxtLink>
-        <NuxtLink to="/about">About Us</NuxtLink>
-        <NuxtLink to="/socials">Social Media</NuxtLink>
-    </nav>
+    <div>
+        <nav id="desktop_nav">
+            <NuxtLink to="/suggest">Suggestions</NuxtLink>
+            <NuxtLink to="/policies">Policies</NuxtLink>
+            <NuxtLink to="/" id="title">Andy + Fin Caucus</NuxtLink>
+            <NuxtLink to="/about">About Us</NuxtLink>
+            <NuxtLink to="/socials">Social Media</NuxtLink>
+        </nav>
+        <nav id="mobile">
+            <div id="top">
+                <NuxtLink to="/" id="title">Andy + Fin Caucus</NuxtLink>
+                <div v-on:click="toggle">
+                    <svg
+                        id="burger_button"
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="384"
+                        height="384"
+                        viewBox="0 0 24 24"
+                        style="fill: #000000"
+                    >
+                        <path
+                            d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"
+                        ></path>
+                    </svg>
+                </div>
+            </div>
+            <div id="dropdown" ref="dropdown">
+                <h3><NuxtLink to="/suggest">Suggestions</NuxtLink></h3>
+                <h3><NuxtLink to="/policies">Policies</NuxtLink></h3>
+                <h3><NuxtLink to="/about">About Us</NuxtLink></h3>
+                <h3><NuxtLink to="/socials">Social Media</NuxtLink></h3>
+            </div>
+        </nav>
+    </div>
 </template>
 
 <script>
 export default {
-    name: 'navbar',
     methods: {
-        openMenu() {
-            let burger = document.getElementById('toggle');
-            burger.classList.remove('on');
-            burger.classList.add('off');
-
-            let navbar = document.getElementsByTagName('nav')[0];
-            navbar.classList.add('open');
+        toggle() {
+            console.log("Toggle");
+            const dropdown = this.$refs.dropdown;
+            console.log(dropdown.style.display);
+            if (
+                dropdown.style.display != "" &&
+                dropdown.style.display != "none"
+            ) {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
         },
-
-        closeMenu() {
-            let burger = document.getElementById('toggle');
-            burger.classList.remove('off');
-            burger.classList.add('on');
-
-            let navbar = document.getElementsByTagName('nav')[0];
-            navbar.classList.remove('open');
-        }
-    }
+    },
 };
 </script>
 <style scoped>
-nav {
+#desktop_nav {
+    /* background-color: red; */
     width: 100%;
+    height: 5vh;
     display: flex;
     align-items: center; /* Align center on Y axis */
     justify-content: center; /* Align center on X axis */
 }
 
-nav * {
+#desktop_nav * {
     margin-right: 0.1vw;
     margin-left: 0.1vw;
     width: 15vw;
     text-align: center;
 }
 
-/* 2 nav toggle states so we can selectively show and hide when media query is active, but always hide when not */
-.navToggle.on {
-    display: none;
-}
-
-.navToggle.off {
-    display: none;
-}
-
-/* by default hide the top image for the media query */
-#top-hidden {
-    display: none;
+#title {
+    font-size: 20px;
+    width: 200px;
 }
 a {
     color: var(--text-primary);
 }
 
-@media only screen and (max-width: 700px) and (orientation:portrait) {
-    nav {
-        position: absolute;
-        height: 100vh;
-        background-color: #760907;
-        float: left;
+#mobile {
+    margin-top: 2px;
+    display: none;
+    width: 100%;
+}
 
-        top: 0;
-        left: 0;
-        justify-content: start;
-        flex-direction: column;
-        transform: translateX(-100vw);  /* hide navbar away by default */
+@media only screen and (max-width: 630px) {
+    #desktop_nav {
+        display: none;
     }
-
-    nav * {
-        font-size: 5vw;
-        max-font-size: 36px;
-        text-decoration: none;
-        background-color: #9f1116;
-        min-height: 5vw;
-        width: 80vw;
-        padding: 5vh 10vw 5vh 10vw;
-    }
-
-    nav img {
-        background-color: transparent;
-        width: 33vw;
-        height: 33vw;
-    }
-
-    /* show previously hidden logo image at front of list here */
-    #top-hidden {
+    #mobile {
         display: block;
     }
 
-    /* hide previously shown log image in the middle */
-    #title {
+    #dropdown {
         display: none;
     }
 
-    nav *:hover {
-        background-color: #760907;
+    #dropdown h3 {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgb(219, 219, 219);
     }
 
-    #close {
-        position: ABSOLUTE;
-        right: 1vw;
+    #top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
-    #toggle {
-        position: absolute;
-        left: 1vw;
-        transition: 1s;
-        transform: translateX(100vw);
+    #burger_button {
+        height: 50px;
+        width: 50px;
     }
-
-    .navToggle {
-        text-decoration: none;
-        background-color: transparent !important;  /* overwrite nav element backgrounds */
-        color: #afafaf;
+    #title {
         font-size: 24px;
-        top: 1vh;
-        width: 5vh;
-        height: 5vh;
-        padding: 0;
-
-        cursor: pointer;  /* make cursor show as clickable (since these aren't actual link elements) */
-    }
-
-    .navToggle.on {
-        display: block;
-    }
-
-    /* used to animate sliding of navbar after clicking button */
-    nav.open {
-        position: sticky;
-        transition: 1s;
-        transform: translateX(0vw);
+        width: 250px;
     }
 }
 </style>

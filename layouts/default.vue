@@ -34,7 +34,7 @@ body {
     color: black;
     background-color: white;
     margin: 0;
-    padding: 1vh;
+    padding: 0;
 }
 
 body::-webkit-scrollbar {

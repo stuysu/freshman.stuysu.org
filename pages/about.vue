@@ -145,9 +145,9 @@ h2 {
     flex-wrap: wrap;
 }
 #team_directors * {
-    min-width: 250px;
+    min-width: 255px;
     flex: 1;
-    max-width: 300px;
+    max-width: 320px;
     margin: 20px;
     height: 350px;
 }
