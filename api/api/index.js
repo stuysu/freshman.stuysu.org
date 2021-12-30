@@ -9,11 +9,8 @@ router.get("/", (req, res) => {
     res.json("Hello from /api");
 });
 router.get("/get_policies", async (req, res) => {
-    const projects = await Policy.find({});
+    let projects = await Policy.find({});
 
-    projects.sort((a, b) => {
-        return a.index - b.index;
-    });
     res.json(projects);
 });
 
