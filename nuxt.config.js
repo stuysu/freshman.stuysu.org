@@ -35,7 +35,11 @@ export default {
     modules: ["@nuxt/http", "@nuxt/image"],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
+    build: {
+        parallel: true,
+        cache: true,
+        hardSource: true,
+    },
 
     serverMiddleware: {
         "/api": "~/api",
