@@ -138,6 +138,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5px;
 }
 
 #team_directors {

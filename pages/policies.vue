@@ -58,7 +58,7 @@ export default {
     },
     methods: {
         scrollTo(where) {
-            this.$refs[where].scrollIntoView();
+            this.$refs[where].scrollIntoView({ behavior: "smooth" });
         },
     },
 };
@@ -100,6 +100,7 @@ p {
 }
 
 #policies h1 {
+    padding-top: 8px;
     text-align: center;
 }
 @media only screen and (max-width: 630px) {

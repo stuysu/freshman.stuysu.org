@@ -1,8 +1,8 @@
-# AndyFinCaucus
+# Andy+Fin Freshman Caucus Page
 
 ## Build Setup
 
-### In your .env, map ``DB_CONNECT`` to the mongodbURI
+### In your .env, map `DB_CONNECT` to the mongodb+srv:// URI
 
 ```bash
 # install dependencies
