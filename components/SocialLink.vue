@@ -55,6 +55,10 @@ export default {
 .social a {
     text-decoration: none;
     color: inherit;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
 }
 
 </style>
