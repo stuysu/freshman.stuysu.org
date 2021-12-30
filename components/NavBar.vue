@@ -3,7 +3,7 @@
         <nav id="desktop_nav">
             <NuxtLink to="/suggest">Suggestions</NuxtLink>
             <NuxtLink to="/policies">Policies</NuxtLink>
-            <NuxtLink to="/" id="title">Andy + Fin Caucus</NuxtLink>
+            <NuxtLink to="/" id="title"><TextLogo /></NuxtLink>
             <NuxtLink to="/about">About Us</NuxtLink>
             <NuxtLink to="/socials">Social Media</NuxtLink>
         </nav>
@@ -41,9 +41,7 @@
 export default {
     methods: {
         toggle() {
-            console.log("Toggle");
             const dropdown = this.$refs.dropdown;
-            console.log(dropdown.style.display);
             if (
                 dropdown.style.display != "" &&
                 dropdown.style.display != "none"
@@ -60,7 +58,7 @@ export default {
 #desktop_nav {
     /* background-color: red; */
     width: 100%;
-    height: 5vh;
+    height: 80px;
     display: flex;
     align-items: center; /* Align center on Y axis */
     justify-content: center; /* Align center on X axis */
@@ -74,8 +72,9 @@ export default {
 }
 
 #title {
-    font-size: 20px;
-    width: 200px;
+    /* font-size: 20px */
+    width: 170px;
+    text-decoration: none;
 }
 a {
     color: var(--text-primary);

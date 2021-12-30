@@ -13,7 +13,6 @@
 }
 :root {
     font-size: 16px;
-
     --text-primary: #2c3e50;
     /* --text-secondary: #ececec; */
     /* --bg-primary: #23232e;
@@ -24,17 +23,17 @@
 }
 
 * {
-    font-family: var(--main-font);
-    font-weight: normal;
     margin: 0;
     padding: 0;
-    color: var(--text-primary);
+    box-sizing: border-box;
 }
 body {
-    color: black;
     background-color: white;
     margin: 0;
     padding: 0;
+    color: var(--text-primary);
+    font-family: var(--main-font);
+    font-weight: normal;
 }
 
 body::-webkit-scrollbar {
@@ -60,6 +59,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #main {
-    min-height: 95vh;
+    min-height: calc(100vh - 80px);
 }
 </style>
