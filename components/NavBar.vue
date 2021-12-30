@@ -9,7 +9,7 @@
         </nav>
         <nav id="mobile">
             <div id="top">
-                <NuxtLink to="/" id="title">Andy + Fin Caucus</NuxtLink>
+                <NuxtLink to="/" id="title"><TextLogo /></NuxtLink>
                 <div v-on:click="toggle">
                     <svg
                         id="burger_button"

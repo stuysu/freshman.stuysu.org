@@ -21,7 +21,7 @@ export default {
     letter-spacing: 0.15em;
     width: 170px;
     height: 80px;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    padding-top: 13px;
+    padding-bottom: 7px;
 }
 </style>
