@@ -24,6 +24,7 @@ export default {
     padding: 16px;
     width: 50vw;
     color: black;
+    text-align: center;
     align-content: center;
     font-family: "Open Sans";
 
@@ -31,7 +32,7 @@ export default {
 
 .social:hover {
     transition: 1s;
-    transform: translateX(2vw);
+    transform: translateX(1vw);
     background: var(--color);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
