@@ -1,6 +1,6 @@
 <template>
     <div class="social" :style="theme">
-        <a :href="url">
+        <a :href="url" target="_blank">
             <nuxt-img class="social_logo" :src="logo" :alt="logo_alt" />
             {{flavor}}
         </a>
