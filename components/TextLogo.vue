@@ -19,7 +19,7 @@ export default {
     font-weight: bold;
     color: #71749d;
     letter-spacing: 0.15em;
-    width: 170px;
+    width: 180px;
     height: 80px;
     padding-top: 13px;
     padding-bottom: 7px;

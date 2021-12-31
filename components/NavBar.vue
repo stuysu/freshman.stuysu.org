@@ -3,13 +3,13 @@
         <nav id="desktop_nav">
             <NuxtLink to="/suggest">Suggestions</NuxtLink>
             <NuxtLink to="/policies">Policies</NuxtLink>
-            <NuxtLink to="/" id="title"><TextLogo /></NuxtLink>
+            <NuxtLink to="/" class="title"><TextLogo /></NuxtLink>
             <NuxtLink to="/about">About Us</NuxtLink>
             <NuxtLink to="/socials">Social Media</NuxtLink>
         </nav>
         <nav id="mobile">
             <div id="top">
-                <NuxtLink to="/" id="title"><TextLogo /></NuxtLink>
+                <NuxtLink to="/" class="title"><TextLogo /></NuxtLink>
                 <div v-on:click="toggle">
                     <svg
                         id="burger_button"
@@ -71,9 +71,8 @@ export default {
     text-align: center;
 }
 
-#title {
-    /* font-size: 20px */
-    width: 170px;
+.title {
+    width: 180px !important;
     text-decoration: none;
 }
 a {
@@ -117,9 +116,9 @@ a {
         height: 50px;
         width: 50px;
     }
-    #title {
-        font-size: 24px;
-        width: 250px;
+
+    #top .title {
+        margin-left: 3vw;
     }
 }
 </style>
