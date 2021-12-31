@@ -97,6 +97,7 @@ p {
     margin-left: 10px;
     text-align: center;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 #policies h1 {
