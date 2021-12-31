@@ -43,14 +43,14 @@
             />
             <Director
                 name="Mason Chung"
-                role="Cheif of Staff #1"
+                role="Chief of Staff #1"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 img_url="/img/default_pfp.jpg"
             />
             <Director
                 name="Tajrian Jahan"
-                role="Cheif of Staff #2"
+                role="Chief of Staff #2"
                 description="Tajrian is a Chief of Staff, and is responsible for assisting 
 				the Presidents and moderating all staff and directors."
                 img_url="/img/staff/directors/TajrianJahan.jpg"
