@@ -4,7 +4,7 @@
             <h2>{{ name }}</h2>
             <h3>{{ role }}</h3>
             <!-- <div class="pfp" /> -->
-            <nuxt-img class="pfp" :src="img_url" />
+            <nuxt-img class="pfp" :src="img_url" :alt="name" />
             <p class="description">{{ description }}</p>
         </div>
     </div>

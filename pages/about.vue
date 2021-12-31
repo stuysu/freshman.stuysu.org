@@ -1,7 +1,11 @@
 <template>
     <main>
         <h1 id="title">About Us</h1>
-        <img id="landimg" src="/img/landscape.jpg" />
+        <nuxt-img
+            id="landimg"
+            src="/img/landscape.jpg"
+            alt="Andy and Fin smiling"
+        />
         <h2>Who are we?</h2>
         <p>
             Andy Xian (1QQ) and Fin Ying (1YY) are close friends who have known
