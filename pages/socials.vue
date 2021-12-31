@@ -4,14 +4,14 @@
         <br />
         <SocialLink
             flavor="Follow us on Instagram"
-            url="https://www.instagram.com/xian_yingticket/"
+            url="https://www.instagram.com/stuyfreshmancaucus/"
             logo="/img/social_media/instagram.png"
             logo_alt="Instagram Logo"
             theme="--color: linear-gradient(90deg, #ffde51, #f63838, #c938c5)"
         />
         <SocialLink
             flavor="Find us on Facebook"
-            url="https://www.facebook.com/voteforandyfin2022/"
+            url="https://www.facebook.com/StuyFreshmanCaucus/"
             logo="/img/social_media/facebook.png"
             logo_alt="Facebook Logo"
             theme="--color: #1877F2"
