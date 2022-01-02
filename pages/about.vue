@@ -69,9 +69,8 @@
             <Director
                 name="Grace Rhee"
                 role="Socials Director"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                img_url="/img/default_pfp.jpg"
+                description="Grace is the Media Outreach Director. She oversees the social media team which is responsible for general communication."
+                img_url="/img/staff/directors/GraceRhee.jpg"
             />
             <Director
                 name="Jia Wen Lin"
