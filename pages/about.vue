@@ -111,9 +111,8 @@
             <Director
                 name="Grace Na"
                 role="Events Director #2"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                img_url="/img/default_pfp.jpg"
+                description="Grace is a Events Director and is responsible for the freshmen related events that will be held through the year."
+                img_url="/img/staff/directors/GraceNa.jpg"
             />
         </div>
     </main>
