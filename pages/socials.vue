@@ -29,7 +29,7 @@
 <script>
 import SocialLink from "~/components/SocialLink";
 export default {
-    components: {SocialLink}
+    components: { SocialLink },
 };
 </script>
 <style scoped>
