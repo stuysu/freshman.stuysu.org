@@ -1,6 +1,8 @@
 <template>
     <main>
-        <h1 id="title">Home Page!</h1>
+        <h1 id="title">
+            Stuyvesant's Freshman Caucus, led by Andy Xian and Fin Ying!
+        </h1>
     </main>
 </template>
 
@@ -10,5 +12,10 @@ export default {};
 <style scoped>
 #title {
     text-align: center;
+}
+
+main {
+    width: 95vw;
+    margin: auto;
 }
 </style>
