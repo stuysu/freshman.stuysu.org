@@ -3,10 +3,22 @@
         <h1 id="title">Our Commitments</h1>
 
         <nav id="policy_nav">
-            <span v-on:click="scrollTo('flexibility')">Flexibility</span>
-            <span v-on:click="scrollTo('inclusivity')">Inclusivity</span>
-            <span v-on:click="scrollTo('collaboration')">Collaboration</span>
-            <span v-on:click="scrollTo('communication')">Communication</span>
+            <div id="wrapper">
+                <span v-on:click="scrollTo('flexibility')">Flexibility</span>
+            </div>
+            <div id="wrapper">
+                <span v-on:click="scrollTo('inclusivity')">Inclusivity</span>
+            </div>
+            <div id="wrapper">
+                <span v-on:click="scrollTo('collaboration')">
+                    Collaboration
+                </span>
+            </div>
+            <div id="wrapper">
+                <span v-on:click="scrollTo('communication')">
+                    Communication
+                </span>
+            </div>
         </nav>
 
         <div id="policies">
@@ -88,16 +100,19 @@ p {
     flex-wrap: wrap;
 }
 
-#policy_nav span {
+#policy_nav .wrapper {
     flex: 1;
     /* width: 15vw; */
     width: 200px;
-    font-size: 1.4rem;
     margin-right: 10px;
     margin-left: 10px;
     text-align: center;
+}
+
+#policy_nav span {
     text-decoration: underline;
     cursor: pointer;
+    font-size: 1.4rem;
 }
 
 #policies h1 {
