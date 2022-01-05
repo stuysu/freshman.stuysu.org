@@ -92,9 +92,7 @@ p {
 }
 
 #policy_nav {
-    /* background-color: red; */
     width: 100%;
-
     display: flex;
     justify-content: space-around; /* Align center on X axis */
     flex-wrap: wrap;
@@ -102,7 +100,6 @@ p {
 
 #policy_nav .wrapper {
     flex: 1;
-    /* width: 15vw; */
     width: 200px;
     margin-right: 10px;
     margin-left: 10px;
