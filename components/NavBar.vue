@@ -1,16 +1,26 @@
 <template>
     <div>
         <nav id="desktop_nav">
-            <NuxtLink to="/suggest">Suggestions</NuxtLink>
-            <NuxtLink to="/policies">Policies</NuxtLink>
-            <NuxtLink to="/" class="title"><TextLogo /></NuxtLink>
-            <NuxtLink to="/about">About Us</NuxtLink>
-            <NuxtLink to="/socials">Social Media</NuxtLink>
+            <div class="page_link">
+                <NuxtLink to="/suggest">Suggestions</NuxtLink>
+            </div>
+            <div class="page_link">
+                <NuxtLink to="/policies">Policies</NuxtLink>
+            </div>
+            <div class="title_parent">
+                <NuxtLink class="title" to="/"><TextLogo /></NuxtLink>
+            </div>
+            <div class="page_link">
+                <NuxtLink to="/about">About Us</NuxtLink>
+            </div>
+            <div class="page_link">
+                <NuxtLink to="/socials">Social Media</NuxtLink>
+            </div>
         </nav>
         <nav id="mobile">
             <div id="top">
                 <NuxtLink to="/" class="title"><TextLogo /></NuxtLink>
-                <div v-on:click="toggle">
+                <div v-on:click="toggle" tabindex="0">
                     <svg
                         id="burger_button"
                         xmlns="http://www.w3.org/2000/svg"
@@ -28,10 +38,26 @@
                 </div>
             </div>
             <div id="dropdown" ref="dropdown">
-                <h3><NuxtLink to="/suggest">Suggestions</NuxtLink></h3>
-                <h3><NuxtLink to="/policies">Policies</NuxtLink></h3>
-                <h3><NuxtLink to="/about">About Us</NuxtLink></h3>
-                <h3><NuxtLink to="/socials">Social Media</NuxtLink></h3>
+                <h3>
+                    <NuxtLink class="dropdownlink" to="/suggest"
+                        >Suggestions</NuxtLink
+                    >
+                </h3>
+                <h3>
+                    <NuxtLink class="dropdownlink" to="/policies"
+                        >Policies</NuxtLink
+                    >
+                </h3>
+                <h3>
+                    <NuxtLink class="dropdownlink" to="/about"
+                        >About Us</NuxtLink
+                    >
+                </h3>
+                <h3>
+                    <NuxtLink class="dropdownlink" to="/socials"
+                        >Social Media</NuxtLink
+                    >
+                </h3>
             </div>
         </nav>
     </div>
@@ -64,17 +90,20 @@ export default {
     justify-content: center; /* Align center on X axis */
 }
 
-#desktop_nav * {
+.page_link {
     margin-right: 0.1vw;
     margin-left: 0.1vw;
     width: 15vw;
     text-align: center;
 }
 
-.title {
+.title,
+.title_parent {
     width: 180px !important;
     text-decoration: none;
+    text-align: center;
 }
+
 a {
     color: var(--text-primary);
 }
@@ -101,7 +130,10 @@ a {
         text-align: center;
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: rgb(219, 219, 219);
+        background-color: #ececec;
+    }
+    .dropdownlink {
+        color: #71749d !important;
     }
 
     #top {
