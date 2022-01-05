@@ -20,9 +20,9 @@
         <nav id="mobile">
             <div id="top">
                 <NuxtLink to="/" class="title"><TextLogo /></NuxtLink>
-                <div v-on:click="toggle" tabindex="0">
+                <button id="burger_button" v-on:click="toggle" tabindex="0">
                     <svg
-                        id="burger_button"
+                        id="burger_button_svg"
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
                         y="0px"
@@ -35,7 +35,7 @@
                             d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"
                         ></path>
                     </svg>
-                </div>
+                </button>
             </div>
             <div id="dropdown" ref="dropdown">
                 <h3>
@@ -140,11 +140,18 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     #burger_button {
+        height: 50px;
+        width: 50px;
+        border: none;
+        background: none;
+        margin-right: 15px;
+    }
+    #burger_button_svg {
         height: 50px;
         width: 50px;
     }
