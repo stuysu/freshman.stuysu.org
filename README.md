@@ -14,11 +14,6 @@ npm run dev
 # generate static project
 npm run generate
 
-# generate ssr project
-npm run build
-
-# run built project
-npm start
 
 ```
 
