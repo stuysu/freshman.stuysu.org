@@ -10,13 +10,14 @@
     },
     "dependencies": {
         "@nuxt/http": "^0.6.4",
-        "@nuxt/image": "^0.6.0",
-        "@nuxtjs/vercel-builder": "^0.22.1",
         "core-js": "^3.15.1",
         "express": "^4.17.2",
         "helmet": "^4.6.0",
         "mongoose": "^6.1.4",
         "morgan": "^1.10.0",
         "nuxt": "^2.15.7"
+    },
+    "devDependencies": {
+        "@nuxt/image": "^0.6.0"
     }
 }
