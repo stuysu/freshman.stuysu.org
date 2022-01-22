@@ -61,17 +61,17 @@ main {
     }
     #main_content_container {
         width: 100%;
-        height: 45vh;
+        /* height: 45vh; */
         min-height: 500px;
     }
     #feed_container {
         width: 100%;
-        height: 25vh;
+        /*height: 25vh;*/
         min-height: 400px;
     }
     #news_container {
         width: 100%;
-        height: 25vh;
+        /*height: 25vh;*/
         min-height: 200px;
     }
     #news {
