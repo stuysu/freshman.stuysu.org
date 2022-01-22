@@ -29,7 +29,7 @@ main {
 }
 
 #layoutcontainer {
-    height: 85vh;
+    /* height: 85vh; */
     /* background-color: grey; */
     display: flex;
     margin-top: 10px;
@@ -39,17 +39,18 @@ main {
 }
 #main_content_container {
     width: 50vw;
-    height: 100%;
-    /* background-color: red; */
+    /* height: 100%;
+    background-color: red; */
 }
 #feed_container {
-    height: 100%;
+
     width: 30vw;
-    /* background-color: blue; */
+    /* height: 100%;
+    background-color: blue; */
 }
 #news_container {
     width: 20vw;
-    height: 100%;
+    /* height: 100%; */
 }
 
 @media (max-width: 1100px) {
