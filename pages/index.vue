@@ -28,7 +28,7 @@ export default {};
 }
 
 main {
-    width: 95vw;
+    width: 97.5vw;
     margin: auto;
 }
 
@@ -36,6 +36,7 @@ main {
     height: 85vh;
     background-color: grey;
     display: flex;
+    margin-top: 10px;
 }
 
 #main_content {
@@ -62,5 +63,31 @@ main {
 .newsevent {
     font-size: 1.4rem;
     text-align: left;
+}
+
+@media (max-width: 1100px) {
+    #layoutcontainer {
+        flex-direction: column-reverse;
+        height: fit-content;
+        margin-bottom: 10vh;
+    }
+    #main_content {
+        width: 100%;
+        height: 45vh;
+        min-height: 500px;
+    }
+    #feed {
+        width: 100%;
+        height: 25vh;
+        min-height: 400px;
+    }
+    #news_container {
+        width: 100%;
+        height: 25vh;
+        min-height: 200px;
+    }
+    #news {
+        width: 95%;
+    }
 }
 </style>

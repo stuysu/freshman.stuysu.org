@@ -17,7 +17,7 @@ export default {
 <style scoped>
 .social {
     color: black;
-    box-shadow: 10px 5px 5px rgb(209, 209, 209);
+    box-shadow: 10px 5px 5px rgb(209, 209, 209), 0 -2px 5px rgb(209, 209, 209);
     border-radius: 30px;
     margin: 2vh auto;
     padding: 16px;
@@ -25,6 +25,7 @@ export default {
     text-align: center;
     align-content: center;
     font-family: "Open Sans";
+    /* background-color: rgb(247, 247, 247); */
     transition: 0.5s;
 }
 
