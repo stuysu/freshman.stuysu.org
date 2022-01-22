@@ -22,7 +22,7 @@ export default {
     color: inherit;
     display: inline-block;
     text-decoration: none;
-    padding: 2.5%;
+    padding: 2.5vh;
     transition: 0.5s;
 }
 .announcement:hover {

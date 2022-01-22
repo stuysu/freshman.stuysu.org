@@ -3,8 +3,10 @@
         <div id="news">
             <h2 id="news_title">News</h2>
             <div id="news_list">
-                <div class="news_event">Uno</div>
-                <div class="news_event">Dos</div>
+                <Article title="Beijing Olympics" text="+100 social credit to those participating in the 2022 Beijing Winter Olympics" />
+                <Article title="New 4th floor mural" text="A new geometric mural has been painted on the 4th floor wall for no real reason lol." />
+                <Article title="Never Gonna Give You Up" text="Never gonna let you down. Never gonna run around and desert you." />
+                <Article title="Never Gonna Make You Cry" text="Never gonna say goodbye. Never gonna tell a lie and hurt you." />
             </div>
         </div>
     </div>
@@ -17,12 +19,11 @@
     margin: auto;
     text-align: center;
 }
-.news_event {
-    font-size: 1.4rem;
-    text-align: left;
-}
+
 #news_title {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
 #news_holder {
     background-color: rgb(226, 226, 226);
