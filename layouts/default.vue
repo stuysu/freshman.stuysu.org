@@ -18,7 +18,7 @@
     /* --bg-primary: #23232e;
     --bg-secondary: #141418; */
     --transition-speed: 600ms;
-    --main-font: "Open Sans";
+    --main-font: "Open Sans", Arial, Helvetica, sans-serif;
     font-family: var(--main-font);
 }
 
