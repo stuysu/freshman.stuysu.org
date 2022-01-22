@@ -47,9 +47,3 @@ input#announcements_title:checked ~ #announcements_list {
     display: none;
 }
 </style>
-<script>
-import Announcement from "~/components/Announcement";
-export default {
-    components: {Announcement}
-}
-</script>

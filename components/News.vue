@@ -1,7 +1,8 @@
 <template>
     <div id="news_holder">
         <div id="news">
-            <h2 id="news_title">News</h2>
+            <input type="checkbox" id="news_title"/>
+            <label for="news_title">News</label>
             <div id="news_list">
                 <Article title="Beijing Olympics" text="+100 social credit to those participating in the 2022 Beijing Winter Olympics" />
                 <Article title="New 4th floor mural" text="A new geometric mural has been painted on the 4th floor wall for no real reason lol." />
@@ -15,16 +16,25 @@
 <style scoped>
 #news {
     width: 95%;
-
     margin: auto;
     text-align: center;
 }
 
-#news_title {
+input#news_title {
+    display: none;
+}
+
+input#news_title +label {
     font-size: 2rem;
+    font-weight: bold;
     padding-top: 2%;
     padding-bottom: 5%;
 }
+
+input#news_title:checked ~ #news_list {
+    display: none;
+}
+
 #news_holder {
     background-color: rgb(226, 226, 226);
     color: black;
