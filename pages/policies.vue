@@ -3,18 +3,18 @@
         <h1 id="title">Our Commitments</h1>
 
         <nav id="policy_nav">
-            <div id="wrapper">
+            <div class="wrapper">
                 <span v-on:click="scrollTo('flexibility')">Flexibility</span>
             </div>
-            <div id="wrapper">
+            <div class="wrapper">
                 <span v-on:click="scrollTo('inclusivity')">Inclusivity</span>
             </div>
-            <div id="wrapper">
+            <div class="wrapper">
                 <span v-on:click="scrollTo('collaboration')">
                     Collaboration
                 </span>
             </div>
-            <div id="wrapper">
+            <div class="wrapper">
                 <span v-on:click="scrollTo('communication')">
                     Communication
                 </span>
