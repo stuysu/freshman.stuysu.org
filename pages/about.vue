@@ -62,9 +62,8 @@
             <Director
                 name="Rou Chen"
                 role="Secretary"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                img_url="/img/default_pfp.jpg"
+                description="Rou's the secretary. She records and takes minutes (notes) for meetings, manages progress for projects, and notes important dates."
+                img_url="/img/staff/directors/RouChen.jpg"
             />
             <Director
                 name="Grace Rhee"
