@@ -31,8 +31,13 @@ input#news_title +label {
     padding-bottom: 5%;
 }
 
-input#news_title:checked ~ #news_list {
-    display: none;
+@media (max-width: 1100px) {
+	#news_list {
+	    display: none;
+	}
+	input#news_title:checked ~ #news_list {
+	    display: inline-block;
+	}
 }
 
 #news_holder {

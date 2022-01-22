@@ -43,7 +43,12 @@ input#announcements_title +label{
     padding-bottom: 5%;
 }
 
-input#announcements_title:checked ~ #announcements_list {
-    display: none;
+@media (max-width: 1100px) {
+	#announcements_list {
+	    display: none;
+	}
+	input#announcements_title:checked ~ #announcements_list {
+	    display: inline-block;
+	}
 }
 </style>
