@@ -39,18 +39,13 @@ main {
 }
 #main_content_container {
     width: 50vw;
-    /* height: 100%;
-    background-color: red; */
 }
 #feed_container {
 
     width: 30vw;
-    /* height: 100%;
-    background-color: blue; */
 }
 #news_container {
     width: 20vw;
-    /* height: 100%; */
 }
 
 @media (max-width: 1100px) {
@@ -66,13 +61,9 @@ main {
     }
     #feed_container {
         width: 100%;
-        /*height: 25vh;*/
-        min-height: 400px;
     }
     #news_container {
         width: 100%;
-        /*height: 25vh;*/
-        min-height: 200px;
     }
     #news {
         width: 95%;

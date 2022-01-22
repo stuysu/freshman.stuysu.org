@@ -1,7 +1,8 @@
 <template>
     <div id="announcements_holder">
         <div id="announcements">
-            <h2 id="announcements_title">Announcements</h2>
+            <input type="checkbox" id="announcements_title"/>
+            <label for="announcements_title"> Announcements </label>
             <div id="announcements_list">
                 <Announcement
                     title="Fin plays with legos"
@@ -31,14 +32,19 @@
     color: #1f1f1f;
 }
 
-.announcement {
-    font-size: 1rem;
-    /* text-align: left; */
+input#announcements_title {
+    display: none;
 }
-#announcements_title {
+
+input#announcements_title +label{
     font-size: 2rem;
+    font-weight: bold;
     padding-top: 2%;
     padding-bottom: 5%;
+}
+
+input#announcements_title:checked ~ #announcements_list {
+    display: none;
 }
 </style>
 <script>
