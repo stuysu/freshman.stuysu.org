@@ -24,7 +24,6 @@ export default {
     width: 50vw;
     text-align: center;
     align-content: center;
-    font-family: "Open Sans";
     /* background-color: rgb(247, 247, 247); */
     transition: 0.5s;
 }
