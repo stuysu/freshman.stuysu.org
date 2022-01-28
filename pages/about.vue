@@ -1,24 +1,20 @@
 <template>
     <main>
-        <h1 id="title">About Us</h1>
-        <nuxt-img
+        <!-- <h1 id="title">About Us</h1> -->
+        <!-- <nuxt-img
             id="landimg"
             src="/img/landscape.jpg"
             alt="Andy and Fin smiling"
-        />
+        /> -->
         <h2>Who are we?</h2>
-        <p>
-            Andy Xian (1QQ) and Fin Ying (1YY) are close friends who have known
-            each other for 4 years as they went to the same middle school and
-            share the common passion of holding leadership positions and
-            representing the student body!
-        </p>
+
         <section id="presidents">
-            <div class="president">
+            <div class="president" id="andy">
                 <nuxt-img
                     id="andyimg"
                     src="/img/andy_smiling.jpg"
                     alt="Andy smiling"
+                    class="smiling"
                 />
                 <h2>Andy Xian</h2>
                 <div>
@@ -55,10 +51,52 @@
                     </p>
                 </div>
             </div>
-            <div class="president">
+            <div class="president" id="fin">
+                <nuxt-img
+                    id="andyimg"
+                    src="/img/fin_smiling.jpg"
+                    alt="Fin smiling"
+                    class="smiling"
+                />
                 <h2>Fin Ying</h2>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet. Et dolor optio qui
+                        temporibus voluptatem vel harum commodi ex harum ipsa ea
+                        recusandae sunt in doloremque incidunt id culpa
+                        voluptatem. Et numquam impedit qui culpa cupiditate est
+                        earum aliquam cum voluptatem saepe et maxime
+                        accusantium.
+                    </p>
+                    <p>
+                        Ut animi sapiente est omnis recusandae rem Quis sint quo
+                        ipsa tenetur et voluptas consectetur ut dolores cumque
+                        ut obcaecati perferendis. Et sunt magni At sunt cumque
+                        ut accusantium perspiciatis aut tenetur voluptatem.
+                    </p>
+                    <p>
+                        Rem aspernatur repellendus non magnam illum ab aliquid
+                        commodi rem deserunt placeat! Hic quia ducimus eum quae
+                        ratione sit temporibus deserunt ea numquam rerum. Aut
+                        deleniti internos ut magnam perspiciatis ad temporibus
+                        molestiae hic enim aliquam et ipsam quae
+                    </p>
+                    <p>
+                        Qui voluptates facere et iusto illo vel officia
+                        dignissimos aut aliquam voluptate a soluta enim qui
+                        omnis consequatur. Ad esse possimus est sequi nostrum ex
+                        dolor quaerat amet assumenda qui voluptatibus dolor non
+                        nihil neque et nesciunt aperiam.
+                    </p>
+                </div>
             </div>
         </section>
+        <p>
+            Andy Xian (1QQ) and Fin Ying (1YY) are close friends who have known
+            each other for 4 years as they went to the same middle school and
+            share the common passion of holding leadership positions and
+            representing the student body!
+        </p>
         <h2>What's our experience?</h2>
         <p>
             Both Andy and Fin have experience with leadership as Fin was the
@@ -202,15 +240,20 @@ h2 {
 }
 
 #presidents {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 .president {
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .president h2 {
@@ -221,9 +264,18 @@ h2 {
     margin-bottom: 8px;
 }
 
-@media (max-width: 650px) {
+.president .smiling {
+    border-radius: 3%;
+}
+@media (max-width: 930px) {
     #presidents {
         display: block;
+    }
+    .president {
+    }
+
+    #andy {
+        margin-bottom: 20px;
     }
 }
 #andyimg {
