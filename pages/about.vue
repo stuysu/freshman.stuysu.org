@@ -6,7 +6,7 @@
             src="/img/landscape.jpg"
             alt="Andy and Fin smiling"
         /> -->
-        <h2>Who are we?</h2>
+        <h1>Who are we?</h1>
 
         <section id="presidents">
             <div class="president" id="andy">
@@ -17,6 +17,7 @@
                     class="smiling"
                 />
                 <h2>Andy Xian</h2>
+                <h3>1QQ</h3>
                 <div>
                     <p>
                         As the current co-president of the freshman caucus, Andy
@@ -59,6 +60,7 @@
                     class="smiling"
                 />
                 <h2>Fin Ying</h2>
+                <h3>1YY</h3>
                 <div>
                     <p>
                         Lorem ipsum dolor sit amet. Et dolor optio qui
@@ -91,13 +93,12 @@
                 </div>
             </div>
         </section>
-        <p>
-            Andy Xian (1QQ) and Fin Ying (1YY) are close friends who have known
-            each other for 4 years as they went to the same middle school and
-            share the common passion of holding leadership positions and
-            representing the student body!
-        </p>
-        <h2>What's our experience?</h2>
+        <!-- <p class="both_text">
+            Andy and Fin are close friends who have known each other for 4
+            years. They went to the same middle school and share the common
+            passion of representing the student body!
+        </p> -->
+        <h2 class="subtitle">What's our experience?</h2>
         <p>
             Both Andy and Fin have experience with leadership as Fin was the
             Editor-In-Chief of the Yearbook Committee, member of the ARISTA
@@ -120,7 +121,7 @@
             open-mindedness, having a clear vision, and being compassionate
             about what he does.
         </p>
-        <h2>Who's in the team?</h2>
+        <h2 class="subtitle">Who's in the team?</h2>
         <div id="team_directors">
             <Director
                 name="Lenny Metlitsky"
@@ -213,18 +214,19 @@ main {
     margin: auto;
 }
 
-h2 {
+h2,
+h1 {
     text-align: center;
 }
 
-#landimg {
+/* #landimg {
     width: 100%;
     max-width: 700px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-}
+} */
 
 #team_directors {
     display: flex;
@@ -249,14 +251,14 @@ h2 {
     padding-left: 5px;
 }
 .president {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
-    margin-right: 5px;
-    margin-left: 5px;
+    width: 47%;
 }
 
-.president h2 {
+.president h2,
+.president h3 {
     text-align: center;
 }
 
@@ -272,6 +274,7 @@ h2 {
         display: block;
     }
     .president {
+        width: 100%;
     }
 
     #andy {
@@ -282,5 +285,9 @@ h2 {
     max-width: min(300px, 80vw);
     margin-right: auto;
     margin-left: auto;
+}
+
+.subtitle {
+    margin-top: 15px;
 }
 </style>
