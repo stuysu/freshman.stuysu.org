@@ -13,6 +13,52 @@
             share the common passion of holding leadership positions and
             representing the student body!
         </p>
+        <section id="presidents">
+            <div class="president">
+                <nuxt-img
+                    id="andyimg"
+                    src="/img/andy_smiling.jpg"
+                    alt="Andy smiling"
+                />
+                <h2>Andy Xian</h2>
+                <div>
+                    <p>
+                        As the current co-president of the freshman caucus, Andy
+                        Xian has a curious mindset and is someone who loves to
+                        try new things especially now that he's attending
+                        Stuyvesant High School.
+                    </p>
+                    <p>
+                        Andy ran for freshman caucus as he has a huge passion
+                        for leadership and bringing out change in his community,
+                        as supported by his 5 total years of student union
+                        experience from elementary and middle school. As of the
+                        2021-2022 school year, he is most looking forward to
+                        accomplishing the sports catalog, talent month, freshman
+                        olympics, newsletters, homework policy reinforcements,
+                        band microphone policy, and chat n' chill meets.
+                    </p>
+                    <p>
+                        Alongside freshman caucus, Andy is also an epeeist on
+                        the fencing team, a trombonist in symphonic band, and a
+                        member of a few other clubs. He used to be a part of
+                        student union communications, badminton, debate, and
+                        tutoring. In the future, he would love to volunteer for
+                        community service.
+                    </p>
+                    <p>
+                        In his free time, he loves to explore the realm of his
+                        hobbies, which include doing sports and exercising,
+                        playing and listening to music, watching and playing
+                        games, literature, cooking, and traveling (which he
+                        hasn't been able to do in a long while).
+                    </p>
+                </div>
+            </div>
+            <div class="president">
+                <h2>Fin Ying</h2>
+            </div>
+        </section>
         <h2>What's our experience?</h2>
         <p>
             Both Andy and Fin have experience with leadership as Fin was the
@@ -153,5 +199,36 @@ h2 {
     max-width: 320px;
     margin: 20px;
     height: 355px;
+}
+
+#presidents {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.president {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.president h2 {
+    text-align: center;
+}
+
+.president p {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 650px) {
+    #presidents {
+        display: block;
+    }
+}
+#andyimg {
+    max-width: min(300px, 80vw);
+    margin-right: auto;
+    margin-left: auto;
 }
 </style>
