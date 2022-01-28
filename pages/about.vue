@@ -128,7 +128,7 @@
                 role="IT Director"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                img_url="/img/default_pfp.jpg"
+                img_url="/img/staff/directors/LennyM.jpg"
             />
             <Director
                 name="Mason Chung"
