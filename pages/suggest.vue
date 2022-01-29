@@ -9,6 +9,13 @@
             logo_alt="Google Forms Logo"
             theme="--color: #7248B9;"
         />
+        <SocialLink
+            flavor="Chat and Chill Live"
+            url="#"
+            logo="/img/social_media/instagram.png"
+            logo_alt="Instagram Logo"
+            theme="--color: linear-gradient(90deg, #ffde51, #f63838, #c938c5)"
+        />
     </main>
 </template>
 
