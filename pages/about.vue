@@ -1,11 +1,5 @@
 <template>
     <main>
-        <!-- <h1 id="title">About Us</h1> -->
-        <!-- <nuxt-img
-            id="landimg"
-            src="/img/landscape.jpg"
-            alt="Andy and Fin smiling"
-        /> -->
         <h1>Who are we?</h1>
 
         <section id="presidents">
@@ -93,11 +87,6 @@
                 </div>
             </div>
         </section>
-        <!-- <p class="both_text">
-            Andy and Fin are close friends who have known each other for 4
-            years. They went to the same middle school and share the common
-            passion of representing the student body!
-        </p> -->
         <h2 class="subtitle">What's our experience?</h2>
         <p>
             Both Andy and Fin have experience with leadership as Fin was the
@@ -217,15 +206,6 @@ h2,
 h1 {
     text-align: center;
 }
-
-/* #landimg {
-    width: 100%;
-    max-width: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-} */
 
 #team_directors {
     display: flex;
