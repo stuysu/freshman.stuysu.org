@@ -14,10 +14,7 @@
                 />
             </section>
             <section id="news_container">
-                <News
-                    v-if="main_data"
-                    :data="main_data.news"
-                />
+                <News v-if="main_data" :data="main_data.news" />
             </section>
         </div>
     </main>
