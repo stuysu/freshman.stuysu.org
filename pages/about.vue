@@ -127,7 +127,7 @@
                 name="Lenny Metlitsky"
                 role="IT Director"
                 description="Lenny is the IT director. He is responsible for the creation and managment of this website and other tech endeavours. "
-                img_url="/img/staff/directors/LennyM.jpg"
+                img_url="/img/staff/directors/LennyMetlitsky.jpg"
             />
             <Director
                 name="Mason Chung"
