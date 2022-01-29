@@ -41,7 +41,8 @@ export default {
     font-weight: bold;
 }
 .announcement-thumbnail {
-    max-height: 320px;
+    max-height: 220px;
+    max-width: 100%;
 }
 .announcement-body {
     color: #3f3f3f;

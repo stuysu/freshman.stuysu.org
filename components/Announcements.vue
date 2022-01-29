@@ -67,11 +67,11 @@ input#announcements_title + label {
     #announcements {
     }
     .announcement_container {
-        height: 470px;
+        height: 400px;
     }
     #announcements_list {
         display: none;
-        height: 500px;
+        /* height: 500px; */
         overflow-y: scroll;
         margin-bottom: 10px;
     }
