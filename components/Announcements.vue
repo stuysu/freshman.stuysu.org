@@ -3,7 +3,7 @@
         <div id="announcements">
             <input type="checkbox" id="announcements_title" />
             <label for="announcements_title"> Announcements </label>
-
+            <span id="toggle"></span>
             <div id="announcements_list">
                 <div
                     v-for="announcement in this.data"
@@ -39,7 +39,7 @@ export default {
 <style scoped>
 #announcements {
     width: 100%;
-
+    position: relative;
     margin: auto;
     text-align: center;
     color: #1f1f1f;
@@ -54,6 +54,7 @@ input#announcements_title + label {
     font-size: 2rem;
     font-weight: bold;
     width: 100%;
+    cursor: pointer;
 }
 
 .announcement_container {
@@ -73,6 +74,24 @@ input#announcements_title + label {
         height: 500px;
         overflow-y: scroll;
         margin-bottom: 10px;
+    }
+    #toggle {
+        display: block;
+        z-index: -1;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 3.5%;
+        top: 16px;
+        text-align: left;
+        color: rgb(63, 63, 63);
+        font-size: 1.5rem;
+    }
+    #toggle::after {
+        content: "∧";
+    }
+
+    input#announcements_title:checked ~ #toggle::after {
+        content: "∨";
     }
     input#announcements_title:checked ~ #announcements_list {
         display: flex;
