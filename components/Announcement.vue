@@ -1,11 +1,13 @@
 <template>
     <div class="announcement">
-        <img class="announcement-thumbnail" :src="img_src" :alt="alt" />
-        <div class="announcement-title">
-            {{ title }}
-        </div>
-        <div class="announcement-body">
-            {{ body }}
+        <div class="announcement_content">
+            <img class="announcement-thumbnail" :src="img_src" :alt="alt" />
+            <div class="announcement-title">
+                {{ title }}
+            </div>
+            <div class="announcement-body">
+                {{ body }}
+            </div>
         </div>
     </div>
 </template>
@@ -20,12 +22,15 @@ export default {
 <style scoped>
 .announcement {
     color: inherit;
-    display: inline-block;
+    display: block;
     text-decoration: none;
-    padding: 2.5vh;
+
     transition: 0.2s;
-    width: 95%;
-    max-width: 400px;
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .announcement:hover {
     background: #f0f0f0;
@@ -36,9 +41,12 @@ export default {
     font-weight: bold;
 }
 .announcement-thumbnail {
-    width: 100%;
+    max-height: 320px;
 }
 .announcement-body {
     color: #3f3f3f;
+}
+.announcement_content {
+    margin: auto;
 }
 </style>
