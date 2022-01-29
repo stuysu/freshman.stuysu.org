@@ -5,25 +5,32 @@
             <label for="news_title">News</label>
             <div id="news_list">
                 <Article
-                    title="Beijing Olympics"
-                    text="+100 social credit to those participating in the 2022 Beijing Winter Olympics"
-                />
-                <Article
-                    title="New 4th floor mural"
-                    text="A new geometric mural has been painted on the 4th floor wall for no real reason lol."
-                />
-                <Article
-                    title="Never Gonna Give You Up"
-                    text="Never gonna let you down. Never gonna run around and desert you."
-                />
-                <Article
-                    title="Never Gonna Make You Cry"
-                    text="Never gonna say goodbye. Never gonna tell a lie and hurt you."
+                    v-for="announcement in this.data"
+                    :key="announcement._id"
+                    :title="announcement.title"
+                    :text="announcement.content"
                 />
             </div>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    props: {
+        data: {
+            type: Array,
+            default: [],
+        },
+    },
+    mounted() {
+        console.log("News prop", this.data);
+    },
+    data() {
+        return {};
+    },
+};
+</script>
 
 <style scoped>
 #news {

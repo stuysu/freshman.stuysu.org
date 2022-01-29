@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const Policy = require("../models/Policy");
 const Announcement = require("../models/Announcement");
+const Article = require("../models/Article");
 const middlewares = require("../middlewares");
 
 // Get all the cards, or search by params in request body.
@@ -16,8 +17,9 @@ router.get("/get_policies", async (req, res) => {
 });
 router.get("/get_main", async (req, res) => {
     let announcements = await Announcement.find({});
+    let news = await Article.find({});
 
-    res.json({ announcements });
+    res.json({ announcements, news });
 });
 
 router.use(middlewares.notFound);
