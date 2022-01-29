@@ -126,8 +126,7 @@
             <Director
                 name="Lenny Metlitsky"
                 role="IT Director"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                description="Lenny is the IT director. He is responsible for the creation and managment of this website and other tech endeavours. "
                 img_url="/img/staff/directors/LennyM.jpg"
             />
             <Director
