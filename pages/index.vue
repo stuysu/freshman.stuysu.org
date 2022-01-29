@@ -7,7 +7,12 @@
             <section id="main_content_container">
                 <MainContent />
             </section>
-            <section id="feed_container"><Announcements /></section>
+            <section id="feed_container">
+                <Announcements
+                    v-if="main_data"
+                    :data="main_data.announcements"
+                />
+            </section>
             <section id="news_container">
                 <News />
             </section>
@@ -16,7 +21,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+    async asyncData({ $http }) {
+        const main_data = await $http.$get("/api/get_main");
+        return {
+            main_data,
+        };
+    },
+    mounted() {
+        console.log(
+            "main_data in main: ",
+            JSON.parse(JSON.stringify(this.main_data))
+        );
+    },
+    methods: {},
+};
 </script>
 <style scoped>
 #title {
@@ -41,7 +60,6 @@ main {
     width: 50vw;
 }
 #feed_container {
-
     width: 30vw;
 }
 #news_container {

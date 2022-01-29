@@ -1,20 +1,20 @@
 <template>
-        <a :href="src" target="_blank" class="announcement">
-            <img class="announcement-thumbnail" :src="img_src" :alt="alt" />
-            <div class="announcement-title">
-                {{ title }}
-            </div>
-            <div class="announcement-body">
-                {{ body }}
-            </div>
-        </a>
+    <div class="announcement">
+        <img class="announcement-thumbnail" :src="img_src" :alt="alt" />
+        <div class="announcement-title">
+            {{ title }}
+        </div>
+        <div class="announcement-body">
+            {{ body }}
+        </div>
+    </div>
 </template>
 
 <script>
 export default {
     name: "Announcement",
     props: ["title", "body", "src", "img_src", "alt"],
-}
+};
 </script>
 
 <style scoped>
@@ -23,7 +23,9 @@ export default {
     display: inline-block;
     text-decoration: none;
     padding: 2.5vh;
-    transition: 0.5s;
+    transition: 0.2s;
+    width: 95%;
+    max-width: 400px;
 }
 .announcement:hover {
     background: #f0f0f0;
@@ -39,5 +41,4 @@ export default {
 .announcement-body {
     color: #3f3f3f;
 }
-
 </style>

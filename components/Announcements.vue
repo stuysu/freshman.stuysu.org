@@ -1,28 +1,37 @@
 <template>
     <div id="announcements_holder">
         <div id="announcements">
-            <input type="checkbox" id="announcements_title"/>
+            <input type="checkbox" id="announcements_title" />
             <label for="announcements_title"> Announcements </label>
+
             <div id="announcements_list">
                 <Announcement
-                    title="Fin plays with legos"
-                    body="the fin from the Freshman Caucus '22 discordapp.com server plays with legos, spec humor writer ayma lyir states"
-                    src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    img_src="https://picsum.photos/300/150"
-                    alt="sample image"
-                />
-                <Announcement
-                    title="Chat n' Chill Meeting this Friday"
-                    body="We will be hosting our first Chat n' Chill meeting, where you're free to chat and chill, the next time I get the CSS right first time"
-                    src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    img_src="https://picsum.photos/300/150"
-                    alt="sample image"
+                    v-for="announcement in this.data"
+                    :key="announcement._id"
+                    :title="announcement.title"
+                    :body="announcement.description"
+                    :img_src="announcement.img_src"
                 />
             </div>
         </div>
     </div>
 </template>
-
+<script>
+export default {
+    props: {
+        data: {
+            type: Array,
+            default: [],
+        },
+    },
+    mounted() {
+        console.log("Data prop", this.data);
+    },
+    data() {
+        return {};
+    },
+};
+</script>
 <style scoped>
 #announcements {
     width: 100%;
@@ -36,19 +45,20 @@ input#announcements_title {
     display: none;
 }
 
-input#announcements_title +label{
+input#announcements_title + label {
+    display: block;
     font-size: 2rem;
     font-weight: bold;
-    padding-top: 2%;
-    padding-bottom: 5%;
+    width: 100%;
 }
 
 @media (max-width: 1100px) {
-	#announcements_list {
-	    display: none;
-	}
-	input#announcements_title:checked ~ #announcements_list {
-	    display: inline-block;
-	}
+    #announcements_list {
+        display: none;
+    }
+    input#announcements_title:checked ~ #announcements_list {
+        display: block;
+        padding-bottom: 5px;
+    }
 }
 </style>
