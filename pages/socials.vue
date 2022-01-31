@@ -10,6 +10,13 @@
             theme="--color: linear-gradient(90deg, #ffde51, #f63838, #c938c5)"
         />
         <SocialLink
+            flavor="😶‍🌫️Check out our finsta"
+            url="https://www.instagram.com/andyfinyfinsta"
+            logo="/img/social_media/instagram.png"
+            logo_alt="Instagram Logo"
+            theme="--color: linear-gradient(90deg, #ffde51, #f63838, #c938c5)"
+        />
+        <SocialLink
             flavor="Find us on Facebook"
             url="https://www.facebook.com/StuyFreshmanCaucus/"
             logo="/img/social_media/facebook.png"
