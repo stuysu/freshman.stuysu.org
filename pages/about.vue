@@ -57,32 +57,26 @@
                 <h3>1YY</h3>
                 <div>
                     <p>
-                        Lorem ipsum dolor sit amet. Et dolor optio qui
-                        temporibus voluptatem vel harum commodi ex harum ipsa ea
-                        recusandae sunt in doloremque incidunt id culpa
-                        voluptatem. Et numquam impedit qui culpa cupiditate est
-                        earum aliquam cum voluptatem saepe et maxime
-                        accusantium.
+			Fin, current Freshman Co-President, hopes to provide 
+			the Freshman body with fun memories despite the Covid 
+			situation this year. They are eager to show everyone 
+			all the fun events that we have planned for this year. 
                     </p>
                     <p>
-                        Ut animi sapiente est omnis recusandae rem Quis sint quo
-                        ipsa tenetur et voluptas consectetur ut dolores cumque
-                        ut obcaecati perferendis. Et sunt magni At sunt cumque
-                        ut accusantium perspiciatis aut tenetur voluptatem.
+			Fin ran for Freshman Caucus this year with their 
+			friend Andy because they both had a shared passion 
+			in serving the community and helping others. They 
+			believe that with their position as Freshman Caucus 
+			President they can make influential decisions for the 
+			school. 
                     </p>
                     <p>
-                        Rem aspernatur repellendus non magnam illum ab aliquid
-                        commodi rem deserunt placeat! Hic quia ducimus eum quae
-                        ratione sit temporibus deserunt ea numquam rerum. Aut
-                        deleniti internos ut magnam perspiciatis ad temporibus
-                        molestiae hic enim aliquam et ipsam quae
-                    </p>
-                    <p>
-                        Qui voluptates facere et iusto illo vel officia
-                        dignissimos aut aliquam voluptate a soluta enim qui
-                        omnis consequatur. Ad esse possimus est sequi nostrum ex
-                        dolor quaerat amet assumenda qui voluptatibus dolor non
-                        nihil neque et nesciunt aperiam.
+			Along with Student Union, Fin is also a part of 
+			numerous activities in the school such as sports team 
+			manager, Red Cross, Indicator Business, Spectator 
+			Layout, Leader in the Stuyvesant Asian Coalition, and 
+			others. Outside of school, Fin enjoys learning and 
+			making, and they especially love playing the piano and ukulele.  
                     </p>
                 </div>
             </div>
