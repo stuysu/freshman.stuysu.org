@@ -64,8 +64,6 @@ input#announcements_title + label {
     margin-bottom: 20px;
 }
 @media (max-width: 1100px) {
-    #announcements {
-    }
     .announcement_container {
         height: 400px;
     }

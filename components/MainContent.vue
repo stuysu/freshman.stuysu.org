@@ -2,7 +2,9 @@
     <div id="main_content_holder">
         <div id="main_content">
             <h1 id="main_content_title">Main Content</h1>
-            <h3>Some main content</h3>
+            <div id="timeschedule_container">
+                <TimeSchedule />
+            </div>
         </div>
     </div>
 </template>
@@ -17,5 +19,8 @@
 #main_content_title {
     color: black;
     font-size: 1.8rem;
+}
+#timeschedule_container {
+    width: 100%;
 }
 </style>
