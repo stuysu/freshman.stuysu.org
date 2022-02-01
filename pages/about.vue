@@ -2,6 +2,10 @@
     <main>
         <h1>Who are we?</h1>
 
+        <h2>
+            We're the Freshman Caucus for Stuyvesant High School's
+            <a href="https://www.stuysu.org/" target="_blank">Student Union</a>
+        </h2>
         <section id="presidents">
             <div class="president" id="andy">
                 <nuxt-img
@@ -57,26 +61,25 @@
                 <h3>1YY</h3>
                 <div>
                     <p>
-			Fin, current Freshman Co-President, hopes to provide 
-			the Freshman body with fun memories despite the Covid 
-			situation this year. They are eager to show everyone 
-			all the fun events that we have planned for this year. 
+                        Fin, current Freshman Co-President, hopes to provide the
+                        Freshman body with fun memories despite the Covid
+                        situation this year. They are eager to show everyone all
+                        the fun events that we have planned for this year.
                     </p>
                     <p>
-			Fin ran for Freshman Caucus this year with their 
-			friend Andy because they both had a shared passion 
-			in serving the community and helping others. They 
-			believe that with their position as Freshman Caucus 
-			President they can make influential decisions for the 
-			school. 
+                        Fin ran for Freshman Caucus this year with their friend
+                        Andy because they both had a shared passion in serving
+                        the community and helping others. They believe that with
+                        their position as Freshman Caucus President they can
+                        make influential decisions for the school.
                     </p>
                     <p>
-			Along with Student Union, Fin is also a part of 
-			numerous activities in the school such as sports team 
-			manager, Red Cross, Indicator Business, Spectator 
-			Layout, Leader in the Stuyvesant Asian Coalition, and 
-			others. Outside of school, Fin enjoys learning and 
-			making, and they especially love playing the piano and ukulele.  
+                        Along with Student Union, Fin is also a part of numerous
+                        activities in the school such as sports team manager,
+                        Red Cross, Indicator Business, Spectator Layout, Leader
+                        in the Stuyvesant Asian Coalition, and others. Outside
+                        of school, Fin enjoys learning and making, and they
+                        especially love playing the piano and ukulele.
                     </p>
                 </div>
             </div>
@@ -186,6 +189,9 @@
 export default {};
 </script>
 <style scoped>
+a {
+    color: var(--text-primary);
+}
 #title {
     text-align: center;
 }
