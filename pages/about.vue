@@ -158,8 +158,7 @@
             <Director
                 name="Josephine G."
                 role="Policy Director #2"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                description="Josephine is a Co-Director of the Policies Department, which manages policies and distributes resources for freshmen."
                 img_url="/img/default_pfp.jpg"
             />
             <Director
