@@ -170,9 +170,8 @@
             <Director
                 name="Salma Azim"
                 role="Events Director #1"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                img_url="/img/default_pfp.jpg"
+                description="Salma hopes that the events will allow students to forget their worries, cut loose, and enjoy time with their peers. "
+                img_url="/img/staff/directors/SalmaAzim.jpg"
             />
             <Director
                 name="Grace Na"
