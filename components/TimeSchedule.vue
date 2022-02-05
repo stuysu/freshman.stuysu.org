@@ -18,10 +18,24 @@ function timeToSeconds(time) {
     seconds = Number(seconds) + Number(minutes) * 60 + Number(hours) * 3600;
     return seconds;
 }
+function get_current_period(current_seconds) {
+    for (let i = 0; i < schedule.length; i++) {
+        const period = schedule[i];
+        if (current_seconds < timeToSeconds(period.end)) {
+            return i;
+        }
+    }
+}
 const schedule = [
     {
         start: "00:00:00",
         end: "7:59:59",
+        name: "Before School",
+    },
+    {
+        start: "8:00:00",
+        end: "23:59:59",
+        name: "After School",
     },
 ];
 export default {
@@ -49,7 +63,8 @@ export default {
             const current_seconds = timeToSeconds(
                 this.current.toLocaleTimeString()
             );
-            // console.log("Current seconds: ", current_seconds);
+            const period = get_current_period(current_seconds);
+            console.log("Current period:", period);
         },
     },
 };
