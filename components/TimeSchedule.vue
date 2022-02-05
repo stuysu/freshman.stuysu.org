@@ -7,6 +7,23 @@
 </template>
 
 <script>
+function timeToSeconds(time) {
+    let [hours, minutes, seconds, half] = time.split(/[\:\ ]/);
+
+    if (half == "PM") {
+        hours = Number(hours) + 12;
+    }
+    // console.log({ hours, minutes, seconds, half });
+
+    seconds = Number(seconds) + Number(minutes) * 60 + Number(hours) * 3600;
+    return seconds;
+}
+const schedule = [
+    {
+        start: "00:00:00",
+        end: "7:59:59",
+    },
+];
 export default {
     name: "TimeSchedule",
     data() {
@@ -29,6 +46,10 @@ export default {
     methods: {
         updateDiffs() {
             this.current = new Date();
+            const current_seconds = timeToSeconds(
+                this.current.toLocaleTimeString()
+            );
+            // console.log("Current seconds: ", current_seconds);
         },
     },
 };
