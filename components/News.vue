@@ -24,9 +24,7 @@ export default {
             default: [],
         },
     },
-    mounted() {
-        console.log("News prop", this.data);
-    },
+    mounted() {},
     data() {
         return {};
     },

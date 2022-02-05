@@ -18,7 +18,6 @@ function timeToSeconds(time) {
     if (half == "PM") {
         hours = Number(hours) + 12;
     }
-    // console.log({ hours, minutes, seconds, half });
 
     seconds = Number(seconds) + Number(minutes) * 60 + Number(hours) * 3600;
     return seconds;
@@ -169,10 +168,6 @@ export default {
                 current_seconds,
                 this.schedule
             );
-            // console.log(
-            //     "Current period:",
-            //     JSON.parse(JSON.stringify(this.schedule[this.period_index]))
-            // );
         },
     },
 };
@@ -182,6 +177,6 @@ export default {
 #time_schedule {
     width: 100%;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 </style>
