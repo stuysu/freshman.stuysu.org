@@ -2,28 +2,46 @@
     <div id="time_schedule">
         <h1>Time Schedule</h1>
         <div v-if="current">
-            <h2>{{ current.toLocaleTimeString() }}</h2>
             <h2>{{ schedule[period_index].name }}</h2>
-            <div id="time_table_container">
-                <table id="time_table">
-                    <tr
-                        v-for="period in periods_only"
-                        :key="period.name"
-                        v-bind:class="
-                            period.name == schedule[period_index].name
-                                ? 'current_period'
-                                : ''
-                        "
-                    >
-                        <td>{{ period.name }}</td>
-                        <td>{{ period.start }}</td>
-                        <td>{{ period.end }}</td>
-                    </tr>
-                </table>
+            <div>
+                <h2>
+                    {{
+                        time_elapsed.hours > 0
+                            ? time_elapsed.hours + " hours and"
+                            : ""
+                    }}
+                    {{ time_elapsed.minutes + " minutes elapsed" }}
+                </h2>
+                <h2>
+                    {{
+                        time_remaining.hours > 0
+                            ? time_remaining.hours + " hours and"
+                            : ""
+                    }}
+                    {{ time_remaining.minutes + " minutes remaining" }}
+                </h2>
             </div>
         </div>
         <div v-else>
             <h2>XX:XX:XX AM</h2>
+        </div>
+        <div id="time_table_container">
+            <table id="time_table">
+                <tr
+                    v-for="period in periods_only"
+                    :key="period.name"
+                    v-bind:class="
+                        period_index &&
+                        period.name == schedule[period_index].name
+                            ? 'current_period'
+                            : ''
+                    "
+                >
+                    <td>{{ period.name }}</td>
+                    <td>{{ period.start }}</td>
+                    <td>{{ period.end }}</td>
+                </tr>
+            </table>
         </div>
     </div>
 </template>
@@ -46,6 +64,14 @@ function get_current_period(current_seconds, schedule) {
             return i;
         }
     }
+}
+
+function secondsToUnits(s) {
+    const hours = Math.floor(s / 3600);
+    let left = Number(s % 3600);
+    const minutes = Math.floor(left / 60);
+    const seconds = left % 60;
+    return { hours, minutes, seconds };
 }
 
 const schedule = [
@@ -161,6 +187,8 @@ export default {
     data() {
         return {
             interval: null,
+            time_elapsed: null,
+            time_remaining: null,
             current: null,
             period_index: null,
             schedule: schedule,
@@ -185,17 +213,23 @@ export default {
             const current_seconds = timeToSeconds(
                 this.current.toLocaleTimeString()
             );
+
+            // Get current "place" in the schedule
             this.period_index = get_current_period(
                 current_seconds,
                 this.schedule
             );
+
+            // Calculate time elapsed/remaining
             const seconds_elapsed =
                 current_seconds -
                 timeToSeconds(this.schedule[this.period_index].start);
             const seconds_remaining =
                 timeToSeconds(this.schedule[this.period_index].end) -
                 current_seconds;
-            console.log(seconds_elapsed, seconds_remaining);
+
+            this.time_elapsed = secondsToUnits(seconds_elapsed);
+            this.time_remaining = secondsToUnits(seconds_remaining);
         },
     },
 };
