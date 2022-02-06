@@ -5,7 +5,7 @@
         </h1>
         <div id="layoutcontainer">
             <section id="main_content_container">
-                <MainContent />
+                <MainContent :schedule="main_data.schedule" />
             </section>
             <section id="feed_container">
                 <Announcements
@@ -23,7 +23,8 @@
 <script>
 export default {
     async asyncData({ $http }) {
-        const main_data = await $http.$get("/api/get_main");
+        let main_data = await $http.$get("/api/get_main");
+
         return {
             main_data,
         };

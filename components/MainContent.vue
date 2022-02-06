@@ -3,12 +3,24 @@
         <div id="main_content">
             <h1 id="main_content_title">Main Content</h1>
             <div id="timeschedule_container">
-                <TimeSchedule />
+                <TimeSchedule :schedule="schedule" />
             </div>
         </div>
     </div>
 </template>
-
+<script>
+export default {
+    props: {
+        schedule: {
+            type: Array,
+        },
+    },
+    mounted() {},
+    data() {
+        return {};
+    },
+};
+</script>
 <style scoped>
 #main_content {
     width: 95%;
