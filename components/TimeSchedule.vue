@@ -1,18 +1,18 @@
 <template>
     <div id="time_schedule">
-        <h1>Time Schedule</h1>
         <div v-if="current">
+            <h2>{{ current.toLocaleTimeString() }}</h2>
             <h2>{{ schedule[period_index].name }}</h2>
-            <div>
-                <h2>
+            <div id="completion_info">
+                <h3>
                     {{
                         time_elapsed.hours > 0
                             ? time_elapsed.hours + " hours and"
                             : ""
                     }}
                     {{ time_elapsed.minutes + " minutes elapsed" }}
-                </h2>
-                <h2>
+                </h3>
+                <h3>
                     {{
                         time_remaining.hours > 0
                             ? time_remaining.hours + " hours and"
@@ -22,7 +22,7 @@
                         Number(Number(time_remaining.minutes) + 1) +
                         " minutes remaining"
                     }}
-                </h2>
+                </h3>
             </div>
         </div>
         <div v-else>
@@ -55,7 +55,7 @@
 function timeToSeconds(time) {
     let [hours, minutes, seconds, half] = time.split(/[\:\ ]/);
 
-    if (half == "PM") {
+    if (half == "PM" && hours != 12) {
         hours = Number(hours) + 12;
     }
 
@@ -156,5 +156,23 @@ td {
 
 .current_period {
     background-color: #cbcddf;
+}
+#completion_info {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 575px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#completion_info h3 {
+    flex: 1;
+}
+
+@media (max-width: 425px) {
+    #completion_info {
+        display: block;
+    }
 }
 </style>
