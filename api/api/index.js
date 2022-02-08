@@ -13,7 +13,7 @@ const schedule = [
     },
     {
         start: "08:00:00",
-        end: "08:39:59",
+        end: "08:40:59",
         name: "Period 1",
     },
     {

@@ -18,7 +18,10 @@
                             ? time_remaining.hours + " hours and"
                             : ""
                     }}
-                    {{ time_remaining.minutes + " minutes remaining" }}
+                    {{
+                        Number(Number(time_remaining.minutes) + 1) +
+                        " minutes remaining"
+                    }}
                 </h2>
             </div>
         </div>
