@@ -35,7 +35,7 @@
                         v-for="period in periods_only"
                         :key="period.name"
                         v-bind:class="
-                            period_index &&
+                            period_index != undefined &&
                             period.name == schedule[period_index].name
                                 ? 'current_period'
                                 : ''
