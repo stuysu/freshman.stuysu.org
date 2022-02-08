@@ -3,7 +3,10 @@
         <div id="main_content">
             <h1 id="main_content_title">Main Content</h1>
             <div id="timeschedule_container">
-                <TimeSchedule :schedule="schedule" />
+                <TimeSchedule
+                    :schedule="schedule"
+                    :bell_schedule_type="bell_schedule_type"
+                />
             </div>
         </div>
     </div>
@@ -13,6 +16,9 @@ export default {
     props: {
         schedule: {
             type: Array,
+        },
+        bell_schedule_type: {
+            type: String,
         },
     },
     mounted() {},

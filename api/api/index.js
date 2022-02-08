@@ -128,7 +128,7 @@ router.get("/get_main", async (req, res) => {
     let announcements = await Announcement.find({});
     let news = await Article.find({});
 
-    res.json({ announcements, news, schedule });
+    res.json({ announcements, news, schedule, bell_schedule_type: "Regular" });
 });
 
 router.use(middlewares.notFound);

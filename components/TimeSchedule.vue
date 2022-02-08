@@ -28,6 +28,11 @@
         <div v-else>
             <h2>XX:XX:XX AM</h2>
         </div>
+        <h3>
+            Today is a
+            <span id="bell_sched_type">{{ bell_schedule_type }}</span> bell
+            schedule
+        </h3>
         <div id="time_table_container">
             <table id="time_table">
                 <tbody>
@@ -84,6 +89,9 @@ export default {
     props: {
         schedule: {
             type: Array,
+        },
+        bell_schedule_type: {
+            type: String,
         },
     },
     data() {
@@ -145,6 +153,7 @@ export default {
     /* border: 1px solid black; */
 }
 #time_table {
+    margin-top: 5px;
     border: 1px solid black;
     width: 100%;
 }
@@ -158,7 +167,6 @@ td {
     background-color: #cbcddf;
 }
 #completion_info {
-    margin-bottom: 5px;
     display: flex;
     justify-content: space-around;
     max-width: 575px;
@@ -174,5 +182,10 @@ td {
     #completion_info {
         display: block;
     }
+}
+
+#bell_sched_type {
+    text-decoration: underline;
+    cursor: pointer;
 }
 </style>

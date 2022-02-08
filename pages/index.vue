@@ -5,7 +5,10 @@
         </h1>
         <div id="layoutcontainer">
             <section id="main_content_container">
-                <MainContent :schedule="main_data.schedule" />
+                <MainContent
+                    :schedule="main_data.schedule"
+                    :bell_schedule_type="main_data.bell_schedule_type"
+                />
             </section>
             <section id="feed_container">
                 <Announcements
