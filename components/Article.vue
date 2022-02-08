@@ -1,15 +1,15 @@
 <template>
     <div class="news-article">
         <div class="news-title">{{ title }}</div>
-        <div class="news-detail">{{ text }}</div>
+        <div class="news-detail" v-html="text"></div>
     </div>
 </template>
 
 <script>
 export default {
     name: "Article",
-    props: ["title", "text"]
-}
+    props: ["title", "text"],
+};
 </script>
 
 <style scoped>

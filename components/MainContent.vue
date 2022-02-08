@@ -24,7 +24,7 @@ export default {
 <style scoped>
 #main_content {
     width: 95%;
-
+    min-height: 80vh;
     margin: auto;
     text-align: center;
 }
