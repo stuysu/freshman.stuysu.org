@@ -5,9 +5,7 @@
             <div class="announcement-title">
                 {{ title }}
             </div>
-            <div class="announcement-body">
-                {{ body }}
-            </div>
+            <div class="announcement-body" v-html="body"></div>
         </div>
     </div>
 </template>

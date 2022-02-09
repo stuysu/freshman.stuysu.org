@@ -119,21 +119,34 @@ console.log("Loaded api");
 router.get("/", (req, res) => {
     res.json("Hello from /api");
 });
+
+function injectLinkProperties(content) {
+    return String(content).replaceAll(
+        "<a ",
+        "<a style='color : var(--font-primary)' target='_blank' "
+    );
+}
 router.get("/get_policies", async (req, res) => {
     let policies = await Policy.find({});
 
     res.json(policies);
 });
+
 router.get("/get_main", async (req, res) => {
-    let announcements = await Announcement.find({});
-    let news = await Article.find({});
+    let announcements = await Announcement.find({}).sort({ _id: -1 });
+    for (let i = 0; i < announcements.length; i++) {
+        let description = announcements[i].description;
+        if (description) {
+            description = injectLinkProperties(description);
+            announcements[i].description = description;
+        }
+    }
+
+    let news = await Article.find({}).sort({ _id: -1 });
     for (let i = 0; i < news.length; i++) {
         let content = news[i].content;
         if (content) {
-            content = String(content).replace(
-                "<a ",
-                "<a style='color : var(--font-primary)' "
-            );
+            content = injectLinkProperties(content);
             news[i].content = content;
         }
     }
