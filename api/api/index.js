@@ -127,6 +127,16 @@ router.get("/get_policies", async (req, res) => {
 router.get("/get_main", async (req, res) => {
     let announcements = await Announcement.find({});
     let news = await Article.find({});
+    for (let i = 0; i < news.length; i++) {
+        let content = news[i].content;
+        if (content) {
+            content = String(content).replace(
+                "<a ",
+                "<a style='color : var(--font-primary)' "
+            );
+            news[i].content = content;
+        }
+    }
 
     res.json({ announcements, news, schedule, bell_schedule_type: "Regular" });
 });

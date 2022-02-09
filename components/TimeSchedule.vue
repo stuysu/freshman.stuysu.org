@@ -169,7 +169,7 @@ td {
 #completion_info {
     display: flex;
     justify-content: space-around;
-    max-width: 575px;
+    max-width: 625px;
     margin-right: auto;
     margin-left: auto;
 }
