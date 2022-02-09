@@ -1,1 +1,1 @@
-vercel --prod
+git push heroku main
