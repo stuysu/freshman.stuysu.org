@@ -2,6 +2,7 @@ const router = require("express").Router();
 const Policy = require("../models/Policy");
 const Announcement = require("../models/Announcement");
 const Article = require("../models/Article");
+const Day = require("../models/Day");
 const middlewares = require("../middlewares");
 
 // Temporary hard coded schedule
@@ -126,6 +127,10 @@ function injectLinkProperties(content) {
         "<a style='color : var(--font-primary)' target='_blank' "
     );
 }
+
+async function getBellScheduleForDate(date) {
+    return (await Day.findOne({ date }))?.bell_schedule_type || "Regular";
+}
 router.get("/get_policies", async (req, res) => {
     let policies = await Policy.find({});
 
@@ -151,7 +156,18 @@ router.get("/get_main", async (req, res) => {
         }
     }
 
-    res.json({ announcements, news, schedule, bell_schedule_type: "Regular" });
+    const today = new Date().toLocaleDateString("en-US", {
+        timeZone: "EST",
+    });
+
+    const bell_schedule_type = await getBellScheduleForDate(today);
+
+    res.json({
+        announcements,
+        news,
+        schedule,
+        bell_schedule_type: bell_schedule_type,
+    });
 });
 
 router.use(middlewares.notFound);
