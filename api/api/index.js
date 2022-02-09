@@ -121,8 +121,8 @@ router.get("/", (req, res) => {
 });
 
 function injectLinkProperties(content) {
-    return String(content).replaceAll(
-        "<a ",
+    return String(content).replace(
+        /<a /gi,
         "<a style='color : var(--font-primary)' target='_blank' "
     );
 }
