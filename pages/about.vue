@@ -8,7 +8,7 @@
         </h2>
         <section id="presidents">
             <div class="president" id="andy">
-                <nuxt-img
+                <img
                     id="andyimg"
                     src="/img/andy_smiling.jpg"
                     alt="Andy smiling"
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="president" id="fin">
-                <nuxt-img
+                <img
                     id="andyimg"
                     src="/img/fin_smiling.jpg"
                     alt="Fin smiling"
