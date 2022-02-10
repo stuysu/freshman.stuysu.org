@@ -17,7 +17,7 @@ export default {
             {
                 hid: "description",
                 name: "description",
-                content: "The website for the Andy+Fin's freshman caucus!",
+                content: "The website for the Freshman Caucus!",
             },
             { name: "format-detection", content: "telephone=no" },
         ],
