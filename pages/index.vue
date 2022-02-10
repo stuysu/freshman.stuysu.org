@@ -26,7 +26,7 @@
 <script>
 export default {
     async asyncData({ $http }) {
-        let main_data = await $http.$get("/api/get_main");
+        let main_data = await $http.$get(get_base_url() + "/api/get_main");
 
         return {
             main_data,
