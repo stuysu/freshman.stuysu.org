@@ -48,4 +48,5 @@ export default {
     serverMiddleware: {
         "/api": "~/api",
     },
+    dev: process.env.NODE_ENV !== "production",
 };

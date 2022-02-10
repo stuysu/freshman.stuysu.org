@@ -4,14 +4,15 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const apiRouter = require("./api/index").router;
+const cors = require("cors");
 
 dotenv.config();
 
 // Create express instance
 const app = express();
 
+app.use(cors());
 app.use(express.json());
-
 app.use(helmet());
 app.use(morgan("tiny"));
 

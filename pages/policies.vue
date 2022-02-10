@@ -58,9 +58,10 @@
 </template>
 
 <script>
+import get_base_url from "../helpers/get_base_url";
 export default {
     async asyncData({ $http }) {
-        const policies = await $http.$get("/api/get_policies");
+        const policies = await $http.$get(get_base_url() + "/api/get_policies");
         return {
             policies,
         };
