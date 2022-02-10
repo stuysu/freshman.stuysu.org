@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import get_base_url from "../helpers/get_base_url";
 export default {
     async asyncData({ $http }) {
         let main_data = await $http.$get(get_base_url() + "/api/get_main");
