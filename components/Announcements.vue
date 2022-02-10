@@ -13,6 +13,7 @@
                         :key="announcement._id"
                         :title="announcement.title"
                         :body="announcement.description"
+                        :src="announcement.src"
                         :img_src="announcement.img_src"
                     />
                 </div>

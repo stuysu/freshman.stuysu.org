@@ -1,5 +1,5 @@
 <template>
-    <div class="announcement">
+    <a :href="src" target="_blank" class="announcement">
         <div class="announcement_content">
             <img class="announcement-thumbnail" :src="img_src" :alt="alt" />
             <div class="announcement-title">
@@ -7,7 +7,7 @@
             </div>
             <div class="announcement-body" v-html="body"></div>
         </div>
-    </div>
+    </a>
 </template>
 
 <script>
