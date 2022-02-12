@@ -56,7 +56,10 @@ router.get("/get_main", async (req, res) => {
 
     const bell_schedule_type = await getBellScheduleForDate(today);
 
-    const schedule = await Schedule.findOne({ name: bell_schedule_type });
+    let schedule = await Schedule.findOne({ name: bell_schedule_type });
+    if (!schedule) {
+        schedule = await Schedule.findOne({ name: "Regular" });
+    }
 
     res.json({
         announcements,
