@@ -6,7 +6,7 @@
             <span id="toggle"></span>
             <div id="announcements_list">
                 <div
-                    v-for="announcement in this.data"
+                    v-for="announcement in data"
                     class="announcement_container"
                 >
                     <Announcement
