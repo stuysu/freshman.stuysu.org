@@ -103,9 +103,6 @@ router.get("/get_main", async (req, res) => {
         schedule: schedule.segments,
         bell_schedule_type: bell_schedule_type,
         week: weekinfos,
-        dates,
-        today,
-        start_date,
     });
 });
 
