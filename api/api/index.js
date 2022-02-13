@@ -36,11 +36,7 @@ function get_week(start) {
     let m = new Date(start);
     for (let i = 0; i < 4; i++) {
         m.setDate(m.getDate() + 1); // JS will auto update month and year
-        dates.push(
-            m.toLocaleDateString("en-US", {
-                timeZone: "EST",
-            })
-        );
+        dates.push(m.toLocaleDateString("en-US"));
     }
     return dates;
 }
@@ -54,9 +50,7 @@ function get_first_day(start_date) {
     if (m.getDay() == 0) {
         m.setDate(m.getDate() + 1);
     }
-    return m.toLocaleDateString("en-US", {
-        timeZone: "EST",
-    });
+    return m.toLocaleDateString("en-US");
 }
 router.get("/get_main", async (req, res) => {
     let announcements = await Announcement.find({}).sort({ _id: -1 });
