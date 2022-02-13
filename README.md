@@ -11,10 +11,11 @@ npm install
 # serve with hot reload at localhost:3000
 npm run dev
 
-# generate static project
-npm run generate
+# generate optimized server
+npm run build
 
-
+# run optimized server
+npm start
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
