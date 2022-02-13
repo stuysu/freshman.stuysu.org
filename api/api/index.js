@@ -51,6 +51,9 @@ function get_first_day(start_date) {
     while (m.getDay() > 1) {
         m.setDate(m.getDate() - 1);
     }
+    if (m.getDay() == 0) {
+        m.setDate(m.getDate() + 1);
+    }
     return m.toLocaleDateString("en-US", {
         timeZone: "EST",
     });

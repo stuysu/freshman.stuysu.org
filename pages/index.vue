@@ -8,6 +8,7 @@
                 <MainContent
                     :schedule="main_data.schedule"
                     :bell_schedule_type="main_data.bell_schedule_type"
+                    :days="main_data.week"
                 />
             </section>
             <section id="feed_container">

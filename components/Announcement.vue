@@ -1,5 +1,5 @@
 <template>
-    <div target="_blank" class="announcement">
+    <div class="announcement">
         <div class="announcement_content">
             <img class="announcement-thumbnail" :src="img_src" :alt="alt" />
             <div class="announcement-title">

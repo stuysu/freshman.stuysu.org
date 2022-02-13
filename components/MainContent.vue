@@ -8,6 +8,7 @@
                     :bell_schedule_type="bell_schedule_type"
                 />
             </div>
+            <div id="week_container"><Week :days="days" /></div>
         </div>
     </div>
 </template>
@@ -19,6 +20,9 @@ export default {
         },
         bell_schedule_type: {
             type: String,
+        },
+        days: {
+            type: Array,
         },
     },
     mounted() {},
@@ -39,6 +43,10 @@ export default {
     font-size: 1.8rem;
 }
 #timeschedule_container {
+    width: 100%;
+}
+#week_container {
+    margin-top: 15px;
     width: 100%;
 }
 </style>
