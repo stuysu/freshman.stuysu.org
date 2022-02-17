@@ -29,6 +29,9 @@ export default {
     height: 100%;
     display: flex;
     align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 1%;
 }
 .announcement:hover {
     background: #f0f0f0;
@@ -37,12 +40,16 @@ export default {
 .announcement-title {
     font-size: 1.4rem;
     font-weight: bold;
+    width: 95%;
+    margin: auto;
 }
 .announcement-thumbnail {
     max-height: 220px;
     max-width: 100%;
 }
 .announcement-body {
+    width: 95%;
+    margin: auto;
     color: #3f3f3f;
 }
 .announcement_content {
