@@ -144,8 +144,7 @@
             <Director
                 name="Jia Wen Lin"
                 role="Graphics Director"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                description="Jia is the graphics director and is in charge of making the caucus' work aesthetic and effective to view/consume. "
                 img_url="/img/default_pfp.jpg"
             />
             <Director
