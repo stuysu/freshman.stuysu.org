@@ -72,7 +72,7 @@ input#news_title + label {
         left: 3.5%;
         top: 16px;
         text-align: left;
-        color: rgb(63, 63, 63);
+        color: var(--text-primary);
         font-size: 1.5rem;
     }
     #toggle::after {
