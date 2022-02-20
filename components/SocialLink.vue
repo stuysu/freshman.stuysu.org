@@ -16,7 +16,7 @@ export default {
 
 <style scoped>
 .social {
-    color: black;
+    color: var(--text-primary);
     box-shadow: 10px 5px 5px rgb(209, 209, 209), 0 -2px 5px rgb(209, 209, 209);
     border-radius: 30px;
     margin: 2vh auto;

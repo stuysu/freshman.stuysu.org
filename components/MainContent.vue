@@ -39,7 +39,7 @@ export default {
     text-align: center;
 }
 #main_content_title {
-    color: black;
+    color: var(--text-primary);
     font-size: 1.8rem;
 }
 #timeschedule_container {

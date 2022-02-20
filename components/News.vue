@@ -91,7 +91,7 @@ input#news_title + label {
 #news_holder {
     /* background-color: rgb(226, 226, 226); */
     z-index: -2;
-    color: black;
+    color: var(--text-primary);
     height: 100%;
 }
 </style>

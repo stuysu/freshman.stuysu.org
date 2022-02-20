@@ -9,8 +9,9 @@
 <style>
 :root {
     font-size: 16px;
-    --text-primary: #2c3e50;
-    /* --text-secondary: #ececec; */
+    --text-primary: rgb(22, 22, 22);
+    /* --text-primary: red; */
+    --text-secondary: #2c3e50;
     /* --bg-primary: #23232e;
     --bg-secondary: #141418; */
     --transition-speed: 600ms;
@@ -49,7 +50,7 @@ body::-webkit-scrollbar-thumb {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    color: #2c3e50;
+    color: var(--text-primary);
 
     /* to be away from nav */
 }

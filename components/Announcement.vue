@@ -2,9 +2,9 @@
     <div class="announcement">
         <div class="announcement_content">
             <img class="announcement-thumbnail" :src="img_src" :alt="alt" />
-            <div class="announcement-title">
+            <h2 class="announcement-title">
                 {{ title }}
-            </div>
+            </h2>
             <div class="announcement-body" v-html="body"></div>
         </div>
     </div>
@@ -50,7 +50,7 @@ export default {
 .announcement-body {
     width: 95%;
     margin: auto;
-    color: #3f3f3f;
+    color: var(--text-primary);
 }
 .announcement_content {
     margin: auto;
