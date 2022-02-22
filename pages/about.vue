@@ -163,7 +163,7 @@
             <Director
                 name="Ayla Irshad"
                 role="Finance Director"
-                description="Ayla is the Finance Director. She is responsible for managing all the funds for Freshman Caucus and calculating them for events and other expenses."
+                description="Ayla is the Finance Director. She's responsible for managing the caucus' funds, expenses, and finances."
                 img_url="/img/default_pfp.jpg"
             />
             <Director
@@ -213,7 +213,7 @@ h1 {
     flex: 1;
     max-width: 320px;
     margin: 20px;
-    height: 355px;
+    height: 360px;
 }
 
 #presidents {

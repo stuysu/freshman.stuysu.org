@@ -7,6 +7,7 @@ export default {
         title: "Freshman Caucus",
         htmlAttrs: {
             lang: "en",
+            class: "light_mode",
         },
         meta: [
             { charset: "utf-8" },

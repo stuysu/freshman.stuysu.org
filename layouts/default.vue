@@ -9,23 +9,29 @@
 <style>
 :root {
     font-size: 16px;
-    --text-primary: rgb(22, 22, 22);
-    /* --text-primary: red; */
-    --text-secondary: #2c3e50;
-    /* --bg-primary: #23232e;
-    --bg-secondary: #141418; */
+
     --transition-speed: 600ms;
     --main-font: Arial, Helvetica, sans-serif;
     font-family: var(--main-font);
 }
 
+.dark_mode {
+    --text-primary: rgb(236, 236, 236);
+    --text-secondary: #979a9e;
+    --background-primary: rgb(39, 39, 42);
+}
+.light_mode {
+    --text-primary: rgb(22, 22, 22);
+    --text-secondary: #2c3e50;
+    --background-primary: white;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: white;
+    background-color: var(--background-primary);
     margin: 0;
     padding: 0;
     color: var(--text-primary);
@@ -51,7 +57,7 @@ body::-webkit-scrollbar-thumb {
     -moz-osx-font-smoothing: grayscale;
 
     color: var(--text-primary);
-
+    /* background-color: var(--background-primary); */
     /* to be away from nav */
 }
 

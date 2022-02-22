@@ -154,12 +154,12 @@ export default {
 }
 #time_table {
     margin-top: 5px;
-    border: 1px solid black;
+    border: 1px solid var(--text-primary);
     width: 100%;
 }
 #time_table,
 td {
-    border: 1px solid black;
+    border: 1px solid var(--text-primary);
     border-collapse: collapse;
 }
 

@@ -23,9 +23,9 @@ export default {
 <style scoped>
 .parent {
     width: 100%;
-    border: 1px solid rgb(54, 51, 51);
     border-radius: 3%;
     padding-top: 5px;
+    border: 1px solid var(--text-secondary);
 }
 .director {
     text-align: center;

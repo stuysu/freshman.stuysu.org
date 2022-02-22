@@ -33,8 +33,11 @@ export default {
     padding-bottom: 5px;
     border-radius: 1%;
 }
-.announcement:hover {
+.light_mode .announcement:hover {
     background: #f0f0f0;
+}
+.dark_mode .announcement:hover {
+    background: #6b6666;
 }
 
 .announcement-title {
