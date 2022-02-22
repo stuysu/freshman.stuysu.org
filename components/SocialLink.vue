@@ -17,17 +17,22 @@ export default {
 <style scoped>
 .social {
     color: var(--text-primary);
-    box-shadow: 10px 5px 5px rgb(209, 209, 209), 0 -2px 5px rgb(209, 209, 209);
     border-radius: 30px;
     margin: 2vh auto;
     padding: 16px;
     width: 50vw;
     text-align: center;
     align-content: center;
-    /* background-color: rgb(247, 247, 247); */
     transition: 0.5s;
 }
 
+.light_mode .social {
+    box-shadow: 10px 5px 5px rgb(209, 209, 209), 0 -2px 5px rgb(209, 209, 209);
+}
+.dark_mode .social {
+    background-color: rgb(65, 65, 65);
+    box-shadow: 10px 5px 5px rgb(24, 24, 24), 0 -2px 5px rgb(24, 24, 24);
+}
 .social:hover {
     background: var(--color);
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),

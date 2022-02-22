@@ -59,8 +59,11 @@ main {
     display: flex;
     margin-top: 10px;
 }
-#layoutcontainer section {
+.light_mode #layoutcontainer section {
     border: 1px solid rgb(197, 197, 197);
+}
+.dark_mode #layoutcontainer section {
+    border: 1px solid rgb(104, 104, 104);
 }
 #main_content_container {
     width: 50vw;

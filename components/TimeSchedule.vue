@@ -154,17 +154,20 @@ export default {
 }
 #time_table {
     margin-top: 5px;
-    border: 1px solid var(--text-primary);
+    border: 1px solid var(--text-secondary);
     width: 100%;
 }
 #time_table,
 td {
-    border: 1px solid var(--text-primary);
+    border: 1px solid var(--text-secondary);
     border-collapse: collapse;
 }
 
-.current_period {
+.light_mode .current_period {
     background-color: #cbcddf;
+}
+.dark_mode .current_period {
+    background-color: #3f4047;
 }
 #completion_info {
     display: flex;

@@ -32,10 +32,13 @@ export default {
 </script>
 
 <style scoped>
-#red_title {
+.light_mode #red_title {
     color: #b22222;
-    /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
 }
+.dark_mode #red_title {
+    color: rgb(219, 67, 67);
+}
+
 #day_table {
     display: flex;
     justify-content: space-around;
