@@ -145,7 +145,7 @@
                 name="Jia Wen Lin"
                 role="Graphics Director"
                 description="Jia is the graphics director and is in charge of making the caucus' work aesthetic and effective to view/consume. "
-                img_url="/img/default_pfp.jpg"
+                img_url="/img/staff/directors/JiaLin.jpg"
             />
             <Director
                 name="Ray Xu"
