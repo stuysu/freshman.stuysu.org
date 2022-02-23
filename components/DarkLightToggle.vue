@@ -1,8 +1,8 @@
 <template>
     <div>
-	<button class="theme_toggle" v-on:click="toggle" tabindex="0">
-	    <p class="light">☀️</p>
-	    <p class="dark">🌙</p>
+        <button class="theme_toggle" v-on:click="toggle" type="button">
+            <b class="light">☀️</b>
+            <b class="dark">🌙</b>
         </button>
     </div>
 </template>
@@ -11,50 +11,44 @@
 export default {
     methods: {
         toggle() {
-		window.localStorage.setItem('pref-color', (this.isDark() ? 'light' : 'dark'));  // set negation of current state
-		this.setTheme();
-            },
-
-	setTheme() {
-		let darkState = this.isDark();
-		if(darkState) {
-			document.getElementsByTagName('html')[0].className = "dark_mode";
-		}
-		else {
-			document.getElementsByTagName('html')[0].className = "light_mode";
-		}
+            // set negation of current state
+            window.localStorage.setItem('pref-color', (this.isDark() ? 'light' : 'dark'));
+            this.setTheme();
         },
-	
-	isDark() {
-		let dark = window.localStorage.getItem('pref-color');
-		if (dark)  // is defined
-			dark = (dark === 'dark');
-		else  // isnt defined, read system theme
-			dark = window.matchMedia("(prefers-color-scheme: dark)");
-		return dark;
-	},
+
+        setTheme() {
+            if (typeof window !== 'undefined')  // guard to run only on client side
+                document.getElementsByTagName('html')[0].className = (this.isDark() ? "dark_mode" : "light_mode");
+        },
+
+        isDark() {
+            let dark = window.localStorage.getItem('pref-color');
+            if (dark)  // is defined
+                return (dark === 'dark');
+            else  // isnt defined, read system theme
+                return window.matchMedia("(prefers-color-scheme: dark)");
+        },
     },
 
     async created() {
-        console.log("created!");
-	this.setTheme();
+        this.setTheme();
     }
 };
 </script>
 <style scoped>
 .theme_toggle {
-	border: none;
-	text-align: center;
-	font-size: 32px;
-	background-color: #00000000;
+    border: none;
+    text-align: center;
+    font-size: 32px;
+    background-color: #00000000;
 }
 
 .light_mode .dark {
-	display: none;
+    display: none;
 }
 
 .dark_mode .light {
-	display: none;
+    display: none;
 }
 
 </style>
