@@ -16,10 +16,12 @@
             <div class="page_link">
                 <NuxtLink to="/socials">Social Media</NuxtLink>
             </div>
+	    <DarkLightToggle />
         </nav>
         <nav id="mobile">
             <div id="top">
                 <NuxtLink to="/" class="title"><TextLogo /></NuxtLink>
+	    	<DarkLightToggle />
                 <button id="burger_button" v-on:click="toggle" tabindex="0">
                     <svg
                         id="burger_button_svg"
