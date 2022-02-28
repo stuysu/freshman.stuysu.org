@@ -7,11 +7,15 @@
 <script></script>
 
 <style>
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+}
 :root {
     font-size: 16px;
-
     --transition-speed: 600ms;
-    --main-font: Arial, Helvetica, sans-serif;
+    /* --main-font: Arial, Helvetica, sans-serif; */
+    --main-font: "Ubuntu", Arial, Helvetica, sans-serif;
     font-family: var(--main-font);
 }
 
