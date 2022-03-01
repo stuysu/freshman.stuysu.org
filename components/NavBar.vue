@@ -132,7 +132,13 @@ a {
         text-align: center;
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+    .light_mode #dropdown h3 {
         background-color: #ececec;
+    }
+
+    .dark_mode #dropdown h3 {
+        background-color: rgb(51, 51, 56);
     }
     .dropdownlink {
         color: #71749d !important;
