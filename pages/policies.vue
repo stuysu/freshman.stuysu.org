@@ -27,7 +27,7 @@
 
                 <div
                     v-for="policy in policies"
-                    v-if="policy.catagory == 'flexibility'"
+                    v-if="policy.category == 'flexibility'"
                     :key="policies._id"
                 >
                     <Policy
@@ -42,7 +42,7 @@
                 <h1>Inclusivity Policies</h1>
                 <div
                     v-for="policy in policies"
-                    v-if="policy.catagory == 'inclusivity'"
+                    v-if="policy.category == 'inclusivity'"
                     :key="policies._id"
                 >
                     <Policy
