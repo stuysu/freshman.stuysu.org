@@ -5,10 +5,6 @@ const policySchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    why: {
-        type: String,
-        required: true,
-    },
     description: {
         type: String,
         required: true,
@@ -16,6 +12,9 @@ const policySchema = new mongoose.Schema({
     category: {
         type: String,
         required: true,
+    },
+    why: {
+        type: String,
     },
     how: {
         type: String,
