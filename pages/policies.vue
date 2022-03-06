@@ -10,13 +10,8 @@
                 <span v-on:click="scrollTo('information')">Information</span>
             </div>
             <div class="wrapper">
-                <span v-on:click="scrollTo('collaboration')">
+                <span v-on:click="scrollTo('events')">
                     Collaboration
-                </span>
-            </div>
-            <div class="wrapper">
-                <span v-on:click="scrollTo('communication')">
-                    Communication
                 </span>
             </div>
         </nav>
@@ -26,7 +21,7 @@
                 <h1>Flexibility Policies</h1>
 
                 <div
-                    v-for="policy in policies"
+                    v-for="policy in this.policies"
                     v-if="policy.category == 'flexibility'"
                     :key="policies._id"
                 >
@@ -43,6 +38,21 @@
                 <div
                     v-for="policy in policies"
                     v-if="policy.category == 'information'"
+                    :key="policies._id"
+                >
+                    <Policy
+                        :name="policy.name"
+                        :description="policy.description"
+                        :why="policy.why"
+                        :how="policy.how"
+                    />
+                </div>
+            </section>
+            <section ref="events">
+                <h1>Events Policies</h1>
+                <div
+                    v-for="policy in policies"
+                    v-if="policy.category == 'events'"
                     :key="policies._id"
                 >
                     <Policy

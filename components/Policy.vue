@@ -2,8 +2,8 @@
     <div class="policy">
         <h2>{{ name }}</h2>
         <p>{{ description }}</p>
-        <p>Why: {{ why }}</p>
-        <p>How: {{ how }}</p>
+        <p v-if="why">Why: {{ why }}</p>
+        <p v-if="how">How: {{ how }}</p>
     </div>
 </template>
 
@@ -12,6 +12,7 @@ export default {
     name: "Policy",
     props: ["name", "description", "why", "how"],
     mounted() {
+	console.log(this);
         // console.log(this.name, this.description, this.why);
     },
 };
