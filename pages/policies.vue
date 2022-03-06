@@ -7,7 +7,7 @@
                 <span v-on:click="scrollTo('flexibility')">Flexibility</span>
             </div>
             <div class="wrapper">
-                <span v-on:click="scrollTo('inclusivity')">Inclusivity</span>
+                <span v-on:click="scrollTo('information')">Information</span>
             </div>
             <div class="wrapper">
                 <span v-on:click="scrollTo('collaboration')">
@@ -38,11 +38,11 @@
                     />
                 </div>
             </section>
-            <section ref="inclusivity">
-                <h1>Inclusivity Policies</h1>
+            <section ref="information">
+                <h1>Information Policies</h1>
                 <div
                     v-for="policy in policies"
-                    v-if="policy.category == 'inclusivity'"
+                    v-if="policy.category == 'information'"
                     :key="policies._id"
                 >
                     <Policy
