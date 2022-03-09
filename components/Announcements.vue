@@ -3,7 +3,7 @@
         <div id="announcements">
             <input type="checkbox" id="announcements_title" />
             <label for="announcements_title"> Announcements </label>
-            <span id="toggle"></span>
+            <span id="announcements_toggle"></span>
             <div id="announcements_list">
                 <div
                     v-for="announcement in data"
@@ -73,7 +73,7 @@ input#announcements_title + label {
         overflow-y: scroll;
         margin-bottom: 10px;
     }
-    #toggle {
+    #announcements_toggle {
         display: block;
         z-index: -1;
         position: absolute;
@@ -84,7 +84,7 @@ input#announcements_title + label {
         color: var(--text-primary);
         font-size: 1.5rem;
     }
-    #toggle::after {
+    #announcements_toggle::after {
         content: "∧";
     }
 

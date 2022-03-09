@@ -3,7 +3,7 @@
         <div id="news">
             <input type="checkbox" id="news_title" />
             <label for="news_title">News</label>
-            <span id="toggle"></span>
+            <span id="news_toggle"></span>
             <div id="news_list">
                 <Article
                     v-for="announcement in this.data"
@@ -56,7 +56,7 @@ input#news_title + label {
     z-index: 2;
     cursor: pointer;
 }
-#toggle {
+#news_toggle {
     display: none;
 }
 
@@ -64,7 +64,7 @@ input#news_title + label {
     #news_list {
         display: none;
     }
-    #toggle {
+    #news_toggle {
         display: block;
         z-index: -1;
         position: absolute;
@@ -75,11 +75,11 @@ input#news_title + label {
         color: var(--text-primary);
         font-size: 1.5rem;
     }
-    #toggle::after {
+    #news_toggle::after {
         content: "∧";
     }
 
-    input#news_title:checked ~ #toggle::after {
+    input#news_title:checked ~ #news_toggle::after {
         content: "∨";
     }
 
