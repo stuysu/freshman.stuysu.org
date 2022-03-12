@@ -2,6 +2,7 @@
     "name": "andyfincaucus",
     "version": "1.0.0",
     "private": true,
+    "homepage": "https://github.com/stuysu/freshman.stuysu.org",
     "scripts": {
         "dev": "nuxt",
         "build": "nuxt build",

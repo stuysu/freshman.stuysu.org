@@ -189,6 +189,5 @@ td {
 
 #bell_sched_type {
     text-decoration: underline;
-    cursor: pointer;
 }
 </style>
