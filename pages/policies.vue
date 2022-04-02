@@ -10,9 +10,7 @@
                 <span v-on:click="scrollTo('information')">Information</span>
             </div>
             <div class="wrapper">
-                <span v-on:click="scrollTo('events')">
-                    Collaboration
-                </span>
+                <span v-on:click="scrollTo('events')">Events</span>
             </div>
         </nav>
 
@@ -26,6 +24,7 @@
                     :key="policies._id"
                 >
                     <Policy
+                        class="policy"
                         :name="policy.name"
                         :description="policy.description"
                         :why="policy.why"
@@ -41,6 +40,7 @@
                     :key="policies._id"
                 >
                     <Policy
+                        class="policy"
                         :name="policy.name"
                         :description="policy.description"
                         :why="policy.why"
@@ -56,6 +56,7 @@
                     :key="policies._id"
                 >
                     <Policy
+                        class="policy"
                         :name="policy.name"
                         :description="policy.description"
                         :why="policy.why"
@@ -107,6 +108,11 @@ p {
     display: flex;
     justify-content: space-around; /* Align center on X axis */
     flex-wrap: wrap;
+}
+
+.policy {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #policy_nav .wrapper {
