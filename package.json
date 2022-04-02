@@ -11,12 +11,12 @@
     },
     "dependencies": {
         "@nuxt/http": "^0.6.4",
-        "core-js": "^3.15.1",
+        "core-js": "^3.21.1",
         "cors": "^2.8.5",
-        "express": "^4.17.2",
-        "helmet": "^4.6.0",
-        "mongoose": "^6.1.4",
+        "express": "^4.17.3",
+        "helmet": "^5.0.2",
+        "mongoose": "^6.2.9",
         "morgan": "^1.10.0",
-        "nuxt": "^2.15.7"
+        "nuxt": "^2.15.8"
     }
 }
