@@ -23,13 +23,13 @@
             logo_alt="Facebook Logo"
             theme="--color: #1877F2"
         />
-        <SocialLink
+        <!--SocialLink
             flavor="Join our Discord server"
             url="https://discord.gg/"
             logo="/img/social_media/discord.svg"
             logo_alt="Discord Logo"
             theme="--color: #5865F2"
-        />
+        /-->
     </main>
 </template>
 
